@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PharmacyDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Candidate">
+    <Key>
+      <PropertyRef Name="CandidateID" />
+    </Key>
+    <Property Name="CandidateID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar(max)" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="EducationDetails" Type="nvarchar(max)" />
+    <Property Name="CV" Type="nvarchar" MaxLength="200" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="StaffID" Type="int" />
+    <Property Name="InterviewDate" Type="smalldatetime" />
+    <Property Name="InterviewNote" Type="nvarchar(max)" />
+    <Property Name="Status" Type="int" />
+    <Property Name="DateOfBirth" Type="date" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="TaxCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="Representative" Type="nvarchar" MaxLength="250" />
+    <Property Name="UserQuote" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar" MaxLength="200" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PassWord" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Manufacturer">
+    <Key>
+      <PropertyRef Name="manufacturerID" />
+    </Key>
+    <Property Name="manufacturerID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="manufacturerName" Type="nvarchar(max)" />
+    <Property Name="nation" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Nation">
+    <Key>
+      <PropertyRef Name="nationID" />
+    </Key>
+    <Property Name="nationID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="nationName" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="OrderDetail">
+    <Key>
+      <PropertyRef Name="OrderID" />
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="OrderID" Type="int" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" />
+  </EntityType>
+  <EntityType Name="Orderpro">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderDate" Type="smalldatetime" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="Status" Type="int" />
+    <Property Name="StaffID" Type="int" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductName" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="DateOfManufacture" Type="smalldatetime" />
+    <Property Name="TypeID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ManufacturerID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Price" Type="float" />
+    <Property Name="Images" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Staff">
+    <Key>
+      <PropertyRef Name="StaffID" />
+    </Key>
+    <Property Name="StaffID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StaffName" Type="nvarchar(max)" />
+    <Property Name="TaxCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Images" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="TypeProduct">
+    <Key>
+      <PropertyRef Name="typeID" />
+    </Key>
+    <Property Name="typeID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="typeName" Type="nvarchar(max)" />
+    <Property Name="images" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Candidate_Staff">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
+    <End Role="Candidate" Type="Self.Candidate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="StaffID" />
+      </Principal>
+      <Dependent Role="Candidate">
+        <PropertyRef Name="StaffID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Manufacturer_Nation">
+    <End Role="Nation" Type="Self.Nation" Multiplicity="0..1" />
+    <End Role="Manufacturer" Type="Self.Manufacturer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Nation">
+        <PropertyRef Name="nationID" />
+      </Principal>
+      <Dependent Role="Manufacturer">
+        <PropertyRef Name="nation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
+    <End Role="Orderpro" Type="Self.Orderpro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="Orderpro">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Staff">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
+    <End Role="Orderpro" Type="Self.Orderpro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="StaffID" />
+      </Principal>
+      <Dependent Role="Orderpro">
+        <PropertyRef Name="StaffID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_Order">
+    <End Role="Orderpro" Type="Self.Orderpro" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OrderDetail" Type="Self.OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orderpro">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_Product">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="OrderDetail" Type="Self.OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Manufacturer">
+    <End Role="Manufacturer" Type="Self.Manufacturer" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Manufacturer">
+        <PropertyRef Name="manufacturerID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ManufacturerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Type">
+    <End Role="TypeProduct" Type="Self.TypeProduct" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeProduct">
+        <PropertyRef Name="typeID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PharmacyDBModelStoreContainer">
+    <EntitySet Name="Candidate" EntityType="Self.Candidate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Manufacturer" EntityType="Self.Manufacturer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Nation" EntityType="Self.Nation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderDetail" EntityType="Self.OrderDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orderpro" EntityType="Self.Orderpro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Staff" EntityType="Self.Staff" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TypeProduct" EntityType="Self.TypeProduct" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Candidate_Staff" Association="Self.FK_Candidate_Staff">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="Candidate" EntitySet="Candidate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Manufacturer_Nation" Association="Self.FK_Manufacturer_Nation">
+      <End Role="Nation" EntitySet="Nation" />
+      <End Role="Manufacturer" EntitySet="Manufacturer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Customer" Association="Self.FK_Order_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Orderpro" EntitySet="Orderpro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Staff" Association="Self.FK_Order_Staff">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="Orderpro" EntitySet="Orderpro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_Order" Association="Self.FK_OrderDetail_Order">
+      <End Role="Orderpro" EntitySet="Orderpro" />
+      <End Role="OrderDetail" EntitySet="OrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_Product" Association="Self.FK_OrderDetail_Product">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="OrderDetail" EntitySet="OrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Manufacturer" Association="Self.FK_Product_Manufacturer">
+      <End Role="Manufacturer" EntitySet="Manufacturer" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Type" Association="Self.FK_Product_Type">
+      <End Role="TypeProduct" EntitySet="TypeProduct" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

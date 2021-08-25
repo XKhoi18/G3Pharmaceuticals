@@ -1,0 +1,449 @@
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\ApplicationInsights.config
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.exe
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.exe.config
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.rsp
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csi.exe
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csi.rsp
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.AppContext.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Collections.Immutable.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.IO.FileSystem.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Reflection.Metadata.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.exe
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.exe.config
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.rsp
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\VBCSCompiler.exe
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\VBCSCompiler.exe.config
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.dll.config
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.pdb
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Antlr3.Runtime.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.SqlServer.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Agent.Intercept.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.DependencyCollector.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Web.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.WindowsServer.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.ApplicationInsights.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.Web.Infrastructure.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Newtonsoft.Json.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.Mvc.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Helpers.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Mvc.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Optimization.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Razor.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Deployment.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Razor.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\WebGrease.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.SqlServer.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.Mvc.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Helpers.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Mvc.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Optimization.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Razor.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Deployment.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Razor.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Antlr3.Runtime.pdb
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Newtonsoft.Json.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.ApplicationInsights.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.DependencyCollector.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.WindowsServer.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Web.xml
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.dll
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.pdb
+E:\G3Pharmacy\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.csprojResolveAssemblyReference.cache
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\ApplicationInsights.config
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.exe
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.exe.config
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.rsp
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csi.exe
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csi.rsp
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.AppContext.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Collections.Immutable.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.IO.FileSystem.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Reflection.Metadata.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.exe
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.exe.config
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.rsp
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\VBCSCompiler.exe
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\VBCSCompiler.exe.config
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.dll.config
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.pdb
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Antlr3.Runtime.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.SqlServer.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Agent.Intercept.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.DependencyCollector.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Web.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.WindowsServer.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.ApplicationInsights.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.Web.Infrastructure.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Newtonsoft.Json.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.Mvc.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Helpers.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Mvc.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Optimization.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Razor.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Deployment.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Razor.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\WebGrease.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.SqlServer.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.Mvc.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Helpers.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Mvc.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Optimization.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Razor.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Deployment.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Razor.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Antlr3.Runtime.pdb
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Newtonsoft.Json.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.ApplicationInsights.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.DependencyCollector.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.WindowsServer.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Web.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.pdb
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals-Tien-3\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.csprojResolveAssemblyReference.cache
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\ApplicationInsights.config
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.exe
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.exe.config
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.rsp
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csi.exe
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csi.rsp
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.AppContext.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Collections.Immutable.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.IO.FileSystem.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Reflection.Metadata.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.exe
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.exe.config
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.rsp
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\VBCSCompiler.exe
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\VBCSCompiler.exe.config
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.dll.config
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.pdb
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Antlr3.Runtime.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.SqlServer.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Agent.Intercept.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.DependencyCollector.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Web.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.WindowsServer.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.ApplicationInsights.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.Web.Infrastructure.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Newtonsoft.Json.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.Mvc.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Helpers.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Mvc.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Optimization.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Razor.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Deployment.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Razor.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\WebGrease.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.SqlServer.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.Mvc.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Helpers.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Mvc.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Optimization.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Razor.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Deployment.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Razor.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Antlr3.Runtime.pdb
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Newtonsoft.Json.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.ApplicationInsights.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.DependencyCollector.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.WindowsServer.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Web.xml
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.dll
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.pdb
+E:\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\ApplicationInsights.config
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.exe
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.exe.config
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.rsp
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csi.exe
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csi.rsp
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.AppContext.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.exe
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.exe.config
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.rsp
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\VBCSCompiler.exe
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.dll.config
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.pdb
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Antlr3.Runtime.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Web.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.ApplicationInsights.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Newtonsoft.Json.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.Mvc.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Helpers.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Mvc.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Optimization.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Razor.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Razor.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\WebGrease.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.Mvc.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Helpers.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Mvc.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Optimization.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Razor.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Razor.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Antlr3.Runtime.pdb
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Newtonsoft.Json.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Web.xml
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.dll
+C:\Users\ASUS\Desktop\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.pdb
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\ApplicationInsights.config
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.exe
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.exe.config
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.rsp
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csi.exe
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csi.rsp
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.AppContext.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Collections.Immutable.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.IO.FileSystem.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Reflection.Metadata.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.exe
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.exe.config
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.rsp
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\VBCSCompiler.exe
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\VBCSCompiler.exe.config
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.dll.config
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.pdb
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Antlr3.Runtime.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.SqlServer.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Agent.Intercept.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.DependencyCollector.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Web.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.WindowsServer.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.ApplicationInsights.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.Web.Infrastructure.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Newtonsoft.Json.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.Mvc.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Helpers.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Mvc.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Optimization.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Razor.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Deployment.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Razor.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\WebGrease.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.SqlServer.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.Mvc.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Helpers.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Mvc.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Optimization.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Razor.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Deployment.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Razor.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Antlr3.Runtime.pdb
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Newtonsoft.Json.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.ApplicationInsights.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.DependencyCollector.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.WindowsServer.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Web.xml
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.dll
+E:\G3Pharmaceuticals1\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.pdb
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\ApplicationInsights.config
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.exe
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.exe.config
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csc.rsp
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csi.exe
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\csi.rsp
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.AppContext.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Collections.Immutable.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.IO.FileSystem.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\System.Reflection.Metadata.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.exe
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.exe.config
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\vbc.rsp
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\VBCSCompiler.exe
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\roslyn\VBCSCompiler.exe.config
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.dll.config
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\G3Pharmaceuticals.pdb
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Antlr3.Runtime.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.SqlServer.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Agent.Intercept.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.DependencyCollector.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Web.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.WindowsServer.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.ApplicationInsights.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.Web.Infrastructure.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Newtonsoft.Json.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.Mvc.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Helpers.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Mvc.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Optimization.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Razor.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Deployment.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Razor.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\WebGrease.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\EntityFramework.SqlServer.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\PagedList.Mvc.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Helpers.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Mvc.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Optimization.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.Razor.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Deployment.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\System.Web.WebPages.Razor.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Antlr3.Runtime.pdb
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Newtonsoft.Json.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.ApplicationInsights.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.DependencyCollector.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.WindowsServer.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\bin\Microsoft.AI.Web.xml
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.dll
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.pdb
+E:\APTech\Project\Project HKIII\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\G3Pharmaceuticals\obj\Debug\G3Pharmaceuticals.csprojResolveAssemblyReference.cache

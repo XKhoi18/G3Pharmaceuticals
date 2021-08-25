@@ -1,0 +1,66 @@
+.container_quote, .all_quotes {
+    width: 80%;
+    margin: 30px auto;  
+}
+
+.title_quote h3 {
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.quote_text {
+    width: 100%;
+}
+
+.submit_quote {
+    min-width: 10%;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: #FFF;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #008ce9;
+    border: solid 1px #008ce9;
+}
+
+.wrap_quote {
+    outline: 3px solid #FFF;
+    outline-offset: -20px;
+    padding: 30px;
+    background-color: #008ce9;
+    min-height: 200px;
+}
+
+.quote_glyph {
+    top: 4px;
+    left: 30px;
+    padding: 0 5px;
+}
+
+.your__name {
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.your__quote {
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.your__quote:after {
+    content: '"';
+}
+
+.your__quote:before {
+    content: '"';
+}
+
+.quote_btn_submit {
+    text-align: right;
+}

@@ -1,0 +1,51 @@
+﻿@model G3Pharmaceuticals.Models.Manufacturer
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Manufacturer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.manufacturerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.manufacturerID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.manufacturerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.manufacturerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nation)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
+
+

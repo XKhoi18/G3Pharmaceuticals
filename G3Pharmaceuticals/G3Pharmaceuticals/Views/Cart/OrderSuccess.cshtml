@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "OrderSuccess";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/Content/cart.css" />
+<!-- ------------------ -->
+<!-- MAIN CONTENT START-->
+<div class="bg_cart_page" style="padding-top:20px;">
+    <img class="bg__img" src="~/Content/img/Christmas-Website-BG.jpg" alt="" />
+    <div class="cart__page">
+        <h1 class="nothing">ORDER CONFIRMATION</h1>
+        <p class="order"><b>We just sent you an email as your receipt. Double check your email to be sure.</b></p>
+        <div class="est">
+            <h5 class="nothing"><b>Estimate Delivery Time:</b></h5>         
+            @{ DateTime today = DateTime.Now;
+                DateTime answer = today.AddDays(7); }
+            <h5 class="nothing">@answer</h5>
+        </div>
+        <div class="return-index">
+            <h3 class="nothing"><b>While you're waiting, enjoy 20% off your</b></h3>
+            <h3 class="nothing"><b>next purchase.</b></h3>
+            <a href="index.jsp" class="btn__shopping">
+                <div class="ssss">Shopping Now</div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- MAIN CONTENT END -->
+<!-- ------------------ -->
+

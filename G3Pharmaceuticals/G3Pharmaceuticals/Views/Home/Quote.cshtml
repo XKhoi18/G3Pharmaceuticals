@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Quote";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<link rel="stylesheet" href="~/Content/css/quote.css">
+<link rel="stylesheet" href="~/richtexteditor/richtexteditor/rte_theme_default.css" />
+
+<div class="container_quote">
+
+
+    <div class="title_quote">
+        <h3>WHAT OTHERS SAY ABOUT US?</h3>
+    </div>
+    @Html.ActionLink("Post your quote here.", "EditQuote", "Home")
+    <div class="all_quotes">
+        @{  string customerid = "";}
+        @foreach (var item in ViewBag.quote)
+        {
+        customerid = ViewBag.customerid;
+        <div class="wrap_quote">                  
+            <div class="quote_glyph">
+                <i class="fa fa-quote-left fa-2x" aria-hidden="true" style="color: #fff !important;font-size: 2em;"></i>
+            </div>
+            <p class="your__name">@item.CustomerName</p>
+            <p class="your__quote">@Html.Raw(item.UserQuote)</p>
+        </div>
+        }
+    </div>
+</div>
+
+<script type="text/javascript" src="~/richtexteditor/richtexteditor/rte.js"></script>
+<script type="text/javascript" src="~/richtexteditor/richtexteditor/plugins/all_plugins.js"></script>
+<script>
+    var editor1 = new RichTextEditor("#inp_editor1");
+</script>

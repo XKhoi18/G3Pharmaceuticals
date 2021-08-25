@@ -1,0 +1,132 @@
+﻿@model G3Pharmaceuticals.Models.Customer
+
+@{
+    ViewBag.Title = "EditQuote";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Font Static -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Viaoda+Libre&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Montserrat:wght@800&display=swap" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="~/Content/css/index.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/quote.css">
+    <link rel="stylesheet" href="~/richtexteditor/richtexteditor/rte_theme_default.css" />
+</head>
+<body>
+    <!-- ---------------- -->
+    <!-- TOP HEAD CONTENT -->
+    <!-- ---------------- -->
+    <div class="top_head" id="myHeader">
+        <div class="content_top_head">
+            <!-- ----------------- -->
+            <!-- LOG IN / REGISTER -->
+            <!-- ----------------- -->
+            @if (Session["customer"] != null)
+            {
+                <div class="signin_register dropdown-box">
+                    <a class="top_content" href="#"><i class="fa fa-user" style="padding-right: 5px;"></i> My Account </a>
+                    <div class="dropdown-content">
+                        <a class="nav__items" href="@Url.Action("PurchaseHistory", "Home")">Purchase History</a>
+                        <a class="nav__items" href="@Url.Action("LogOut", "Home")">Log Out</a>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="signin_register">
+                    <a class="top_content" href="@Url.Action("LogIn", "Home")"><i class="fa fa-user" style="padding-right: 5px;"></i> Sign In / </a> <a class="top_content" href="@Url.Action("Register", "Home")"> Register </a>
+                </div>
+            }
+            <div class="other_content">
+                <a class="top_content" href="@Url.Action("About","Home")"><i class="fa fa-book" style="padding-right: 5px;"></i> About Us</a>
+                <a class="top_content" href="@Url.Action("Contact","Home")"><i class="fa fa-phone" style="padding-right: 5px;"></i> Contact Us</a>
+                <a class="top_content" href="@Url.Action("Index","Candidate")"><i class="fa fa-question" style="padding-right: 5px;"></i> Careers</a>
+                <a class="top_content" href="@Url.Action("Index","Cart")"><i class="fa fa-shopping-cart" style="padding-right: 5px;"></i> Your Order</a>
+                <a class="top_content" href="@Url.Action("Quote","Home")"><i class="fa fa-comment" style="padding-right: 5px;"></i> Quote Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------- -->
+    <!--      HEADER      -->
+    <!-- ---------------- -->
+    <header class="header">
+        <!-- ---------------- -->
+        <!-- LOGO AND SEARCH  -->
+        <!-- ---------------- -->
+        <div class="logo_and_search">
+            <div class="logo">
+                <a href="@Url.Action("Index","Home")"><img src="~/Content/img/logo.png" alt="logo"></a>
+            </div>
+            <div class="search_promote">
+                <div class="searchbar">
+                    <input type="text" id="searchinput" placeholder="Search...">
+                    <button type="submit" class="search-button"></button>
+                </div>
+                <div class="promote">
+                    <img src="~/Content/img/dash.svg" width="15%" alt="|">
+                    <div class="text_promote">
+                        <span class="promote_title">CONTACT NOW</span>
+                        <span class="sub_title">For enterprise's services</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ---------------- -->
+    <!--    MAIN CONTENT  -->
+    <!-- ---------------- -->
+    <div class="main_content">
+        <div class="container_quote">
+            <div class="title_quote">
+                <h3>QUOTE US</h3>
+            </div>
+            <div class="post_quote_form">
+                <form action="" method="post" enctype = "multipart/form-data">
+                    @Html.AntiForgeryToken()
+                    <textarea class="quote_text" id="inp_editor1" name="UserQuote"></textarea>
+                    <div class="quote_btn_submit">
+                        <input class="submit_quote" type="submit" value="Post">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="~/richtexteditor/richtexteditor/rte.js"></script>
+    <script type="text/javascript" src="~/richtexteditor/richtexteditor/plugins/all_plugins.js"></script>
+    <script>
+        var editor1 = new RichTextEditor("#inp_editor1");
+    </script>
+    <script>
+        //Sticky header
+        window.onscroll = function () {
+            myFunction();
+        };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
+

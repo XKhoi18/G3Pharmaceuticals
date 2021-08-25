@@ -1,0 +1,65 @@
+.contact_container {
+    width: 80%;
+    margin: 30px auto;  
+}
+
+.title_contact h3 {
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.content_contact {
+    display: flex;   
+}
+
+.map_us, .form_contact {
+    width: 50%;
+    color: black;
+}
+
+.map_us span {
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+.text_before {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.form_contact {
+    margin: 20px 40px;
+}
+
+.form_contact input {
+    width: 82%;
+    margin-bottom: 20px;
+}
+
+textarea::placeholder {
+    padding-left: 10px;
+}
+
+h5 {
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+.send-btn {
+    width: 82%;
+    height: 50px;
+    display: grid;
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    align-items: center;
+}
+
+#send-button:hover {
+    text-decoration: none;
+}

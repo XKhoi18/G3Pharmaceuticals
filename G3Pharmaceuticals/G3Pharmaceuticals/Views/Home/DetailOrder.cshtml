@@ -1,0 +1,81 @@
+﻿@model IEnumerable<G3Pharmaceuticals.Models.OrderDetail>
+
+@{
+    ViewBag.Title = "DetailOrder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detail Order</h2>
+
+<table class="table" style="width: 100%;">
+    <tr>
+        <th style="text-align:center">
+            Order ID
+        </th>
+        <th width="300px" style="text-align:center">
+            Product Name
+        </th>
+        <th style="text-align:center">
+            Product Images
+        </th>
+        <th style="text-align:center">
+            Price
+        </th>
+        <th style="text-align:center">
+            Quantity
+        </th>
+        <th style="text-align:center">
+            Total
+        </th>
+    </tr>
+    @{ double sum = 0;}
+    @if (Model == null || Model.Count() <= 0)
+    {
+        <tr>
+            <td colspan="6" style="text-align:center">
+                <strong>You have not purchased anything! @Html.ActionLink("Click here", "Index", "Home")</strong> to continue shopping.
+            </td>
+        </tr>
+    }
+    else
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.OrderID)
+                </td>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.Product.ProductName)
+                </td>
+                <td style="text-align:center">
+                    <img src="~/Content/images/products/@item.Product.Images" width="150px" />
+                </td>
+                <td style="text-align:center">
+                    <div style="color:red">
+                        @{var price = String.Format("{0:0,0}", @item.Product.Price*1.1);}
+                        $@price
+                    </div>
+                </td>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td style="text-align:center">
+                    <div style="color:red">
+                        @{ sum = sum + (double)(item.Quantity * item.Product.Price);}
+                        @{ var total = String.Format("{0:0,0}", item.Quantity * item.Product.Price*1.1);}
+                        $@total
+                    </div>
+                </td>
+            </tr>
+                                }
+                            }
+    <tr>
+        <td colspan="2"><strong>@Html.ActionLink("Back to Purchase History", "PurchaseHistory", "Home")</strong></td>
+        <td colspan="3"></td>
+        <td style="text-align:right"><strong>Total Money: @{ var sumprice = String.Format("{0:0,0}", sum);}</strong></td>
+        <td style="text-align:center">
+            <span style="color: red;"><strong>$@sumprice</strong></span>
+        </td>
+    </tr>
+</table>

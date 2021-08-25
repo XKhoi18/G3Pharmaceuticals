@@ -1,0 +1,57 @@
+﻿@using G3Pharmaceuticals.Models;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/css/style3.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Admin G3Pharmaceuticals", "Index", "Product", new { area = "Admin" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Products", "Index", "Product")</li>
+                    <li>@Html.ActionLink("TypeProduct", "Index", "TypeProduct")</li>
+                    <li>@Html.ActionLink("Nation", "Index", "Nation")</li>
+                    <li>@Html.ActionLink("Customer", "Index", "Customer")</li>
+                    <li>@Html.ActionLink("Staff", "Index", "Staff")</li>
+                    <li>@Html.ActionLink("Manufacturer", "Index", "Manufacturer")</li>
+                    <li>@Html.ActionLink("Order", "Index", "OrderProduct")</li>
+                    <li>@Html.ActionLink("Candidate", "Index", "AdminCandidate")</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="@Url.Action("LogOut", "Login")" class="logout" style="color:white;padding: 10px 10px 10px 10px; margin-top:5px;">LogOut</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="site-footer">
+            <div class="footer">
+                <span><i><b>*Address:</b></i> 1416, Le Duc Tho St, Ward 12, Go Vap District, Ho Chi Minh City.</span> <br>
+                <span><i><b>*Mobile Phone:</b></i> 0335 167 610</span><br>
+                <span><i><b>*Facebook:</b></i><a class="facebook" href="facebook.com/g3pharmaceuticals"> G3Pharmaceuticals</a></span><br>
+                <span><i><b>*Email:</b></i><a class="email" href="mailto:g3pharmaceuticals@gmail.com"> g3pharmaceuticals@gmail.com</a></span>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

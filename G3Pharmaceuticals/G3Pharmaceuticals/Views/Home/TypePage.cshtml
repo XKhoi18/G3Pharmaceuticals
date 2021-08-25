@@ -1,0 +1,73 @@
+﻿@model PagedList.IPagedList<G3Pharmaceuticals.Models.Product>
+@using PagedList.Mvc;
+@using G3Pharmaceuticals.Models;
+
+@{
+    ViewBag.Title = "TypePage";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+<link rel="stylesheet" href="~/Content/css/type_brand.css">
+
+<nav class="router_nav">
+    <div class="home_logo">
+        <a href="@Url.Action("Index", "Home")"><i class="fa fa-home"></i> Home</a>
+    </div>
+    <div class="type_display">
+        <span>Product Type</span>
+    </div>
+</nav>
+
+<div class="type-brand-container">
+    <div class="left-content">
+        <nav class="nav_typeproduct">
+            <h4><strong>Shop by Category</strong></h4>
+            <ul>
+                @foreach (TypeProduct item in ViewBag.menu)
+                {
+                    <li><a class="nav_item" href="@Url.Action("TypePage", "Home", new { typeid = item.typeID }, null)">@item.typeName</a></li>
+                }
+            </ul>
+        </nav>
+        <nav class="nav_typeproduct">
+            <h4><strong>Shop by Manufacturer</strong></h4>
+            <ul>
+                @foreach (Manufacturer item in ViewBag.menu2)
+                {
+                    <li><a class="nav_item" href="@Url.Action("BrandPage", "Home", new { manuid = item.manufacturerID }, null)">@item.manufacturerName</a></li>
+                }
+            </ul>
+        </nav>
+    </div>
+    <div class="right-content">
+        <div class="product_show">
+        @{  string typeid = "";
+            string manuid = "";}
+        @foreach (var item in Model)
+        {
+            typeid = ViewBag.typeID;
+            manuid = ViewBag.manuID;
+            <div class="rec_card">
+                <a class="card_content" href="~/Home/Details?id=@item.ProductID">
+                    <div class="rec_card_img">
+                        <img src="~/Content/images/products/@item.Images" alt="@item.Images">
+                    </div>
+                </a>
+                <div class="rec_product">
+                    <div class="rec_name">
+                        <span>@item.ProductName</span>
+                    </div>
+                </div>
+                <div class="price_cart">
+                    <span>@{var price = String.Format("{0:0,0}", @item.Price * 1.1);} $@price | <a class="cart" href="~/Cart/AddItem?id=@item.ProductID"><i class="fa fa-cart-plus" style="padding-right: 5px;"></i>Order Now</a></span>
+                </div>
+            </div>
+        }
+        </div>
+        <div class="pagination_bar">
+            <div class="page-list">
+                @Html.PagedListPager(Model, page => Url.Action("TypePage", new { page, typeid = typeid}))
+            </div>
+        </div>
+    </div>
+</div>
+

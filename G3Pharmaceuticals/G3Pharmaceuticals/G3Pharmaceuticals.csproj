@@ -1,0 +1,1636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A7473AD-F6EE-43C4-B91D-2171D10433A3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>G3Pharmaceuticals</RootNamespace>
+    <AssemblyName>G3Pharmaceuticals</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminCandidateController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminHomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CustomerController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManufacturerController.cs" />
+    <Compile Include="Areas\Admin\Controllers\NationController.cs" />
+    <Compile Include="Areas\Admin\Controllers\OrderProductController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Admin\Controllers\StaffController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TypeProductController.cs" />
+    <Compile Include="Controllers\CandidateController.cs" />
+    <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Candidate.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CartItem.cs" />
+    <Compile Include="Models\Customer.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Email.cs" />
+    <Compile Include="Models\Encode.cs" />
+    <Compile Include="Models\Manufacturer.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Nation.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderDetail.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Orderpro.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Staff.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TypeProduct.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\aboutus.css" />
+    <Content Include="Content\css\contactus.css" />
+    <Content Include="Content\css\glide-master\.gitignore" />
+    <Content Include="Content\css\glide-master\build\banner.js" />
+    <Content Include="Content\css\glide-master\build\build.js" />
+    <Content Include="Content\css\glide-master\build\build.min.js" />
+    <Content Include="Content\css\glide-master\build\esm.js" />
+    <Content Include="Content\css\glide-master\build\esm.modular.js" />
+    <Content Include="Content\css\glide-master\build\umd.js" />
+    <Content Include="Content\css\glide-master\build\umd.min.js" />
+    <Content Include="Content\css\glide-master\dist\css\glide.core.css" />
+    <Content Include="Content\css\glide-master\dist\css\glide.core.min.css" />
+    <Content Include="Content\css\glide-master\dist\css\glide.theme.css" />
+    <Content Include="Content\css\glide-master\dist\css\glide.theme.min.css" />
+    <Content Include="Content\css\glide-master\dist\glide.esm.js" />
+    <Content Include="Content\css\glide-master\dist\glide.js" />
+    <Content Include="Content\css\glide-master\dist\glide.min.js" />
+    <Content Include="Content\css\glide-master\dist\glide.modular.esm.js" />
+    <Content Include="Content\css\glide-master\entry\entry-complete.js" />
+    <Content Include="Content\css\glide-master\entry\entry-modular.js" />
+    <Content Include="Content\css\glide-master\src\components\anchors.js" />
+    <Content Include="Content\css\glide-master\src\components\autoplay.js" />
+    <Content Include="Content\css\glide-master\src\components\breakpoints.js" />
+    <Content Include="Content\css\glide-master\src\components\build.js" />
+    <Content Include="Content\css\glide-master\src\components\clones.js" />
+    <Content Include="Content\css\glide-master\src\components\controls.js" />
+    <Content Include="Content\css\glide-master\src\components\direction.js" />
+    <Content Include="Content\css\glide-master\src\components\gaps.js" />
+    <Content Include="Content\css\glide-master\src\components\html.js" />
+    <Content Include="Content\css\glide-master\src\components\images.js" />
+    <Content Include="Content\css\glide-master\src\components\keyboard.js" />
+    <Content Include="Content\css\glide-master\src\components\move.js" />
+    <Content Include="Content\css\glide-master\src\components\peek.js" />
+    <Content Include="Content\css\glide-master\src\components\resize.js" />
+    <Content Include="Content\css\glide-master\src\components\run.js" />
+    <Content Include="Content\css\glide-master\src\components\sizes.js" />
+    <Content Include="Content\css\glide-master\src\components\swipe.js" />
+    <Content Include="Content\css\glide-master\src\components\transition.js" />
+    <Content Include="Content\css\glide-master\src\components\translate.js" />
+    <Content Include="Content\css\glide-master\src\core\event\events-binder.js" />
+    <Content Include="Content\css\glide-master\src\core\event\events-bus.js" />
+    <Content Include="Content\css\glide-master\src\core\index.js" />
+    <Content Include="Content\css\glide-master\src\defaults.js" />
+    <Content Include="Content\css\glide-master\src\index.js" />
+    <Content Include="Content\css\glide-master\src\mutator\index.js" />
+    <Content Include="Content\css\glide-master\src\mutator\transformers\focusing.js" />
+    <Content Include="Content\css\glide-master\src\mutator\transformers\gap.js" />
+    <Content Include="Content\css\glide-master\src\mutator\transformers\grow.js" />
+    <Content Include="Content\css\glide-master\src\mutator\transformers\peeking.js" />
+    <Content Include="Content\css\glide-master\src\mutator\transformers\rtl.js" />
+    <Content Include="Content\css\glide-master\src\utils\detect-passive-event.js" />
+    <Content Include="Content\css\glide-master\src\utils\dom.js" />
+    <Content Include="Content\css\glide-master\src\utils\log.js" />
+    <Content Include="Content\css\glide-master\src\utils\object.js" />
+    <Content Include="Content\css\glide-master\src\utils\string.js" />
+    <Content Include="Content\css\glide-master\src\utils\time.js" />
+    <Content Include="Content\css\glide-master\src\utils\unit.js" />
+    <Content Include="Content\css\glide-master\src\utils\wait.js" />
+    <Content Include="Content\css\glide-master\tests\fixtures\html.js" />
+    <Content Include="Content\css\glide-master\tests\fixtures\query.js" />
+    <Content Include="Content\css\glide-master\tests\fixtures\transition.js" />
+    <Content Include="Content\css\glide-master\tests\functional\autoplay.test.js" />
+    <Content Include="Content\css\glide-master\tests\functional\carousel.test.js" />
+    <Content Include="Content\css\glide-master\tests\functional\classes.test.js" />
+    <Content Include="Content\css\glide-master\tests\functional\destroy.test.js" />
+    <Content Include="Content\css\glide-master\tests\functional\go.test.js" />
+    <Content Include="Content\css\glide-master\tests\functional\slider.test.js" />
+    <Content Include="Content\css\glide-master\tests\functional\update.test.js" />
+    <Content Include="Content\css\glide-master\tests\integration\events.test.js" />
+    <Content Include="Content\css\glide-master\tests\integration\instance.test.js" />
+    <Content Include="Content\css\glide-master\tests\unit\dom.test.js" />
+    <Content Include="Content\css\glide-master\tests\unit\events-binder.test.js" />
+    <Content Include="Content\css\glide-master\tests\unit\log.test.js" />
+    <Content Include="Content\css\glide-master\tests\unit\mount.test.js" />
+    <Content Include="Content\css\glide-master\tests\unit\object.test.js" />
+    <Content Include="Content\css\glide-master\tests\unit\string.test.js" />
+    <Content Include="Content\css\glide-master\tests\unit\unit.test.js" />
+    <Content Include="Content\css\index.css" />
+    <Content Include="Content\css\index_candidate.css" />
+    <Content Include="Content\css\login\css\main.css" />
+    <Content Include="Content\css\login\css\util.css" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="Content\css\login\fonts\montserrat\OFL.txt" />
+    <Content Include="Content\css\login\images\icons\favicon.ico" />
+    <Content Include="Content\css\login\images\img-01.png" />
+    <Content Include="Content\css\login\js\main.js" />
+    <Content Include="Content\css\login\vendor\animate\animate.css" />
+    <Content Include="Content\css\login\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Content\css\login\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Content\css\login\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Content\css\login\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\css\login\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\css\login\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\css\login\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\css\login\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\css\login\vendor\bootstrap\js\popper.js" />
+    <Content Include="Content\css\login\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="Content\css\login\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="Content\css\login\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="Content\css\login\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="Content\css\login\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="Content\css\login\vendor\select2\select2.css" />
+    <Content Include="Content\css\login\vendor\select2\select2.js" />
+    <Content Include="Content\css\login\vendor\select2\select2.min.css" />
+    <Content Include="Content\css\login\vendor\select2\select2.min.js" />
+    <Content Include="Content\css\login\vendor\tilt\tilt.jquery.min.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\.gitattributes" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\.gitignore" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\dist\assets\ajax-loader.gif" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\dist\assets\owl.carousel.css" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\dist\assets\owl.carousel.min.css" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\dist\assets\owl.theme.default.css" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\dist\assets\owl.theme.default.min.css" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\dist\assets\owl.theme.green.css" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\dist\assets\owl.theme.green.min.css" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\dist\assets\owl.video.play.png" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\dist\owl.carousel.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\dist\owl.carousel.min.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\css\animate.css" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\css\docs.theme.min.css" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\img\bird_blue_32.png" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\img\download.png" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\img\feature-drag.png" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\img\feature-modern.png" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\img\feature-module.png" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\img\feature-options.png" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\img\feature-responsive.png" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\img\feature-zombie.png" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\img\owl-logo.png" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\img\twitter_25.png" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\js\app.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\js\foundation.min.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.min.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\vendors\foundation.min.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\vendors\highlight.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.mousewheel.min.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\animate.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\autoheight.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\autoplay.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\autowidth.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\basic.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\center.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\demos.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\events.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\lazyLoad.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\merge.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\mousewheel.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\responsive.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\rtl.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\stagepadding.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\test.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\urlhashnav.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\demos\video.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\docs\api-classes.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\docs\api-events.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\docs\api-options.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\docs\dev-buildin-plugins.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\docs\dev-external.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\docs\dev-plugin-api.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\docs\dev-styles.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\docs\started-faq.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\docs\started-installation.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\docs\started-welcome.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\docs\support-changelog.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\docs\support-contact.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\docs\support-contributing.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\index.html" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\Gruntfile.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\img\ajax-loader.gif" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\img\owl.video.play.png" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\js\owl.animate.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\js\owl.autoheight.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\js\owl.autoplay.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\js\owl.autorefresh.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\js\owl.carousel.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\js\owl.hash.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\js\owl.lazyload.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\js\owl.navigation.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\js\owl.support.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\js\owl.support.modernizr.js" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\js\owl.video.js" />
+    <Content Include="Content\css\product.css" />
+    <Content Include="Content\css\quote.css" />
+    <Content Include="Content\css\type_brand.css" />
+    <Content Include="Content\CV Files\addcart.png" />
+    <Content Include="Content\images\id photo\p1.jpeg" />
+    <Content Include="Content\images\id photo\p2.jpg" />
+    <Content Include="Content\images\id photo\p3.jpg" />
+    <Content Include="Content\images\id photo\p4.jpg" />
+    <Content Include="Content\images\id photo\p5.jpg" />
+    <Content Include="Content\images\products\6 in 1 Automatic Veterinary Drugs Plastic Bottle Molding Filling Sealing Machine.png" />
+    <Content Include="Content\images\products\Automatic 6 in 1 Blowing Filling Capping Machine for Essential Oil.png" />
+    <Content Include="Content\images\products\Automatic Aseptic Liquid Plastic Ampoule Forming Filling Sealing Machine.png" />
+    <Content Include="Content\images\products\Automatic Capsule Filler Filling Machine.png" />
+    <Content Include="Content\images\products\Automatic Capsule Filling Machine %28NJP-1200C%29.png" />
+    <Content Include="Content\images\products\Automatic Capsule Filling Machine %28NJP-400C%29.png" />
+    <Content Include="Content\images\products\Automatic Capsule Filling Machine %28NJP-600C%29.png" />
+    <Content Include="Content\images\products\Automatic Capsule Filling Machine %28NJP-800C2%29.png" />
+    <Content Include="Content\images\products\Automatic Capsule Filling Machine Filler.png" />
+    <Content Include="Content\images\products\Automatic Capsule Filling Machine with Pharmaceutical.png" />
+    <Content Include="Content\images\products\Automatic Capsule Filling Machine with Vacuum Loader %28NJP1200C%29.png" />
+    <Content Include="Content\images\products\Automatic Capsule Filling Machine with Vacuum Loader.png" />
+    <Content Include="Content\images\products\Automatic Capsule Filling Machine.png" />
+    <Content Include="Content\images\products\Automatic Capsules and Tablet Printer %28YSZ-A%29.png" />
+    <Content Include="Content\images\products\Automatic Cosmetic Plastic Ampoules Bottle Blowing Filling Sealing Machine.png" />
+    <Content Include="Content\images\products\Automatic Digital Control Pump Viscous Liquid Filling Machine.png" />
+    <Content Include="Content\images\products\Automatic Hand Cream Filling and Sealing Machine.png" />
+    <Content Include="Content\images\products\Automatic Hard Capsule Filling Filler Machine.png" />
+    <Content Include="Content\images\products\Automatic High-Speed Rotary Tablet Press Machine.png" />
+    <Content Include="Content\images\products\Automatic High-Speed Tablet Press %28Exchangeable punch turret%29 %28GZPY SERIES%29.png" />
+    <Content Include="Content\images\products\Automatic Molding and Filling and Sealing Machine for Plastic Bottle.png" />
+    <Content Include="Content\images\products\Automatic Olive Oil Disposible Packing Machine.png" />
+    <Content Include="Content\images\products\Automatic Pesticide Liquid Plastic Bottles Ampoule Forming and Filling Machine for Agricultural Chemical.png" />
+    <Content Include="Content\images\products\Automatic Pesticide Liquid Plastic Bottles Filling and Sealing Machine.png" />
+    <Content Include="Content\images\products\Automatic Plastic Ampoule Foliar Fertilizer Pesticide Potting Machine.png" />
+    <Content Include="Content\images\products\Automatic Plastic Ampoule Forming Filling Sealing Machine Oral Liquid Filling and Sealing Machine.png" />
+    <Content Include="Content\images\products\Automatic Plastic Ampoule Liquid Filling Machine.png" />
+    <Content Include="Content\images\products\Automatic Plastic Ampule Blowing Forming Filling Sealing Machine.png" />
+    <Content Include="Content\images\products\Automatic Plastic Bottle Filling Machine Liquid Bottle Filling Machine.png" />
+    <Content Include="Content\images\products\Automatic Plastic Olive Oil Ampule Filling Machine.png" />
+    <Content Include="Content\images\products\Automatic Small Dosage Plastic Ampoule Forming Filling and Sealing Machine for Liquid.png" />
+    <Content Include="Content\images\products\Automatic Stick Cheese Filling and Sealing Machine.png" />
+    <Content Include="Content\images\products\Automatic Tablet Capsule Counter Packing Machine.png" />
+    <Content Include="Content\images\products\Automatic Triple Rotary High Speed Tablet Press %28GZPLS-1100%29.png" />
+    <Content Include="Content\images\products\Automatic Veterinary Drugs Plastic Ampoule Filling and Sealing Machine.png" />
+    <Content Include="Content\images\products\Best Quality Pesticide Liquid Agricultural Chemicals Plastic Ampoule Forming Filling Sealing Machine.png" />
+    <Content Include="Content\images\products\Capsule &amp; Tablet Inspecting Machine %28drug inspecting machine%29.png" />
+    <Content Include="Content\images\products\Capsule and Tablet Inspection Machine.png" />
+    <Content Include="Content\images\products\Capsule Sorting and Polishing Machine.png" />
+    <Content Include="Content\images\products\Cgn-208d New Semi-Automatic Capsule Filler.png" />
+    <Content Include="Content\images\products\Cgn-208d Semi-Automatic Capsule Filler.png" />
+    <Content Include="Content\images\products\Closed Full-Automatic Capsule Filling Machine.png" />
+    <Content Include="Content\images\products\Double High Speed Rotary Tablet Press Machine.png" />
+    <Content Include="Content\images\products\Double Layer Tablet Press Machine.png" />
+    <Content Include="Content\images\products\Double Layers Rotary Tablet Press %28pressing double layers colors tablet%29.png" />
+    <Content Include="Content\images\products\Double Layers Rotary Tablet Press %28ZPW23%29.png" />
+    <Content Include="Content\images\products\Double Layers Tablet Press %28ZPW2931%29.png" />
+    <Content Include="Content\images\products\Double Photo Register Directional Capsule Printer.png" />
+    <Content Include="Content\images\products\Economic Rotary Tablet Press Making Machine.png" />
+    <Content Include="Content\images\products\Economic-Type High Speed Tablet Press %28GZPL-265 series%29.png" />
+    <Content Include="Content\images\products\Economic-Type High Speed Tablet Press %28GZPLS370 series%29.png" />
+    <Content Include="Content\images\products\Effervescent Tablet Press Machine %28ZPW25%29.png" />
+    <Content Include="Content\images\products\Encapsulation Softgel Making Productioin Line Filling Machine Pharmaceutical Machinery.png" />
+    <Content Include="Content\images\products\Factory High Viscosity Automatic Liquid Filling Machine.png" />
+    <Content Include="Content\images\products\Food Industry Automatic Plastic Olive Oil Ampule Filling Machine.png" />
+    <Content Include="Content\images\products\Full Automatic Plastic Thermoforming Filling Sealing Machine.png" />
+    <Content Include="Content\images\products\Full-Automatic Oral Liquid Plastic Thermoforming Quantitative Filling Sealing Machine.png" />
+    <Content Include="Content\images\products\Fully Automatic Capsule Filling Machine with Dust Collector.png" />
+    <Content Include="Content\images\products\GS-118p5 Plastic Ampoule Forming Filling and Sealing Packing Machine.png" />
+    <Content Include="Content\images\products\Gzp-500series High Speed Rotary Tablet Press.png" />
+    <Content Include="Content\images\products\Gzpls-680 Automatic High-Speed Double-Sided Tablet Press.png" />
+    <Content Include="Content\images\products\Hb High Quality Rotary Tablet Press.png" />
+    <Content Include="Content\images\products\High Efficiency Automatic Rotary Tablet Press.png" />
+    <Content Include="Content\images\products\High Efficiency Rotary Tablet Press.png" />
+    <Content Include="Content\images\products\High Quality Capsule Filling Machine.png" />
+    <Content Include="Content\images\products\High Quality Cosmetic Plastic Ampoules Bottle Blowing Oral Drink Filling Sealing Machine From China.png" />
+    <Content Include="Content\images\products\High Quality De-Blistering Machine for Capsule.png" />
+    <Content Include="Content\images\products\High Quality Fully Automatic Capasule Filling Machine.png" />
+    <Content Include="Content\images\products\High Quality Rotary Tablet Press Machine.png" />
+    <Content Include="Content\images\products\High Speed Plastic Oral Ampoule Filling Sealing Machine.png" />
+    <Content Include="Content\images\products\High Speed Rotary Tablet Press Machine.png" />
+    <Content Include="Content\images\products\Honey Mini Olive Oil Plastic Bottle Forming Filling Sealing Machine.png" />
+    <Content Include="Content\images\products\Hot Sale New Design Semi-Automatic Capsule Filling Machine.png" />
+    <Content Include="Content\images\products\Hot Sale Semi-Automatic Capsule Filling Machine.png" />
+    <Content Include="Content\images\products\Intelligent Rotary Tablet Press Machine.png" />
+    <Content Include="Content\images\products\Lab Scale Tablet Press %28ZPS-8%29.png" />
+    <Content Include="Content\images\products\Labeling of Oral Liquid Filling and Seaming Machine Lines.png" />
+    <Content Include="Content\images\products\Medical Application 1ml 5ml 10ml 15ml Plastic Ampul Fill and Seal Machine.png" />
+    <Content Include="Content\images\products\Medical Application Plastic Ampoule Filling and Sealing Machine.png" />
+    <Content Include="Content\images\products\Mini Lab Scale Automatic Capsule Filling Machine %28NJP-200C%29.png" />
+    <Content Include="Content\images\products\Multi-Function Automatic Open Capsule &amp; Powder Taking Machine.png" />
+    <Content Include="Content\images\products\Multifunctional Automatic Capsule-Opening&amp;Powder-Taking Machine.png" />
+    <Content Include="Content\images\products\Ncj-C Best Price Semi-Automatic Capsule Filler.png" />
+    <Content Include="Content\images\products\New Dimethoate Oral Liquid Paste Honey Jam Cream Medicine Small Cheap Filling and Sealing Machine.png" />
+    <Content Include="Content\images\products\New Type Fully Automatic Mini Capsule Filler.png" />
+    <Content Include="Content\images\products\Nfj-150 Type Capsule Sorter and Polisher.png" />
+    <Content Include="Content\images\products\Njp-200 Small Automatic Hard Gelatin Capsule Filling Machine.png" />
+    <Content Include="Content\images\products\Njp-3200 Automatic Hard Gelatin Capsule Filling Machine.png" />
+    <Content Include="Content\images\products\Njp-400 Small Automatic Hard Gelatin Capsule Filling Machine.png" />
+    <Content Include="Content\images\products\Njp-800 Small Automatic Hard Gelatin Capsule Filling Machine.png" />
+    <Content Include="Content\images\products\Nqf-300b Automatic Open Capsule Powder-Taking Machine.png" />
+    <Content Include="Content\images\products\Olive Oil Packing Machine Forming Filling Sealing with Five Heads.png" />
+    <Content Include="Content\images\products\Oral Automatic Liquid Filling Sealing Machine.png" />
+    <Content Include="Content\images\products\Oral Drinking Filling Sealing Machine and Labeling Packing Line.png" />
+    <Content Include="Content\images\products\Oral Liquid Plastic Ampoule Automatic Filling Sealing Machine.png" />
+    <Content Include="Content\images\products\Oral Liquid Plastic Bottle Automatic Filling &amp; Sealing Machine.png" />
+    <Content Include="Content\images\products\Perfume Oil Plastic Ampoule Form Fill Seal Machine.png" />
+    <Content Include="Content\images\products\Pharmaceutical Automatic Auto Hard Capsule Filling Machine Filler Machinery.png" />
+    <Content Include="Content\images\products\Pharmaceutical Automatic Rotary Tablet Press Machine Machinery Take Making Machine.png" />
+    <Content Include="Content\images\products\Pharmaceutical Five Nozzle Pesticide Plastic Ampoule Filling and Sealing Machine.png" />
+    <Content Include="Content\images\products\Pharmaceutical High Speed Rotary Tablet Press Machine.png" />
+    <Content Include="Content\images\products\Plastic Ampoule Olive Oil Liquid Filling and Sealing Machine.png" />
+    <Content Include="Content\images\products\Plastic Ampoule Oral Liquid Filling Sealing Machine.png" />
+    <Content Include="Content\images\products\Plastic Ampule Forming Filling and Sealing Packing Packaging Pack Machine for Honey Oral Liquid.png" />
+    <Content Include="Content\images\products\Plastic Ampule Forming Filling Sealing Machine for Oral Liquid Olive Oil Essential Oil Honey.png" />
+    <Content Include="Content\images\products\Plastic Bottle Forming Filling Sealing Machine.png" />
+    <Content Include="Content\images\products\Plastic Oral Liquid Bottle Filler and Sealer Oral Solution Filling and Sealing Machine.png" />
+    <Content Include="Content\images\products\PVC PE Pet Oral Liquid Filling and Sealing Machine Plastic Ampoule Forming Filling Sealing Machine.png" />
+    <Content Include="Content\images\products\Rg0.8-110b Soft Gelatin Encapsulation Machine.png" />
+    <Content Include="Content\images\products\Rotary Core Coated Tablet Press.png" />
+    <Content Include="Content\images\products\Rotary Tablet Press %28ZP-15D%29.png" />
+    <Content Include="Content\images\products\Rotary Tablet Press %28ZP37A%29.png" />
+    <Content Include="Content\images\products\Rotary Tablet Press %28ZP45%29.png" />
+    <Content Include="Content\images\products\Rotary Tablet Press Machine %28ZP1100%29.png" />
+    <Content Include="Content\images\products\Rotary Tablet Press Machine %28ZPY120%29.png" />
+    <Content Include="Content\images\products\Rotary Tablet Press Making Machine.png" />
+    <Content Include="Content\images\products\Semi Automatic Capsule Filling Machine for Empty Capsule.png" />
+    <Content Include="Content\images\products\Semi-Automatic Capsule Filler %28CGN-208D%29.png" />
+    <Content Include="Content\images\products\Semi-Automatic Capsule Filler Filling Machine.png" />
+    <Content Include="Content\images\products\Semi-Automatic Capsule Filling Machine %28CGN-208%29.png" />
+    <Content Include="Content\images\products\Semi-Automatic Capsule Seling Filling Machine Equipment.png" />
+    <Content Include="Content\images\products\Semi-Automatic Pellet Capsule Filling Machine Filler.png" />
+    <Content Include="Content\images\products\Single Punch Tablet Press %28DP series%29.png" />
+    <Content Include="Content\images\products\SL32b Tablet Capsule Counter Filler.png" />
+    <Content Include="Content\images\products\Small Vial Oral Drink Liquid Filling Sealing Machine.png" />
+    <Content Include="Content\images\products\Soft Capsule Gel Making Machine.png" />
+    <Content Include="Content\images\products\Soft Drink Small Plastic Ampoule Bottle Filling Machine.png" />
+    <Content Include="Content\images\products\Sub-High Speed Rotary Tablet Press %28ZPY45A%29.png" />
+    <Content Include="Content\images\products\Tablet Press for Pressure Big Tablet %28ZP1118%29.png" />
+    <Content Include="Content\images\products\Thick Plastic Ampule Forming Filling Sealing 10ml Olive Oil Packing Machine.png" />
+    <Content Include="Content\images\products\Touch Rotary Tablet Press Machine %28ZP37%29.png" />
+    <Content Include="Content\images\products\Updated Sub-High Speed Tablet Press Machine %28ZPG-55A%29.png" />
+    <Content Include="Content\images\products\Vial Plastic Ampoule Filling and Seaming Machine with 10 Heads.png" />
+    <Content Include="Content\images\products\Ysd-3000V High-Speed Two Double-Color of The Capsule Printer Machine.png" />
+    <Content Include="Content\images\products\Ysz-a Automatic Capsule Tablet Printer.png" />
+    <Content Include="Content\images\products\Zp-17hb High Efficiency Rotary Tablet Press.png" />
+    <Content Include="Content\images\products\Zp-5 7 9 Rotary Tablet Press %28Enhanced type%29.png" />
+    <Content Include="Content\images\products\Zp-5 7 9A Rotary Tablet Press.png" />
+    <Content Include="Content\images\products\Zp17 19d Rotary Tablet Press Machine.png" />
+    <Content Include="Content\images\products\Zp23 High Quality Three Layers Rotary Tablet Press.png" />
+    <Content Include="Content\images\products\Zp23 Three Layers Rotary Tablet Press.png" />
+    <Content Include="Content\images\products\Zp26 Rotary Core Coated Tablet Press Machine %28Tablet-in-Tablet%29.png" />
+    <Content Include="Content\images\products\Zp9 Best Price Enhenced Type Rotary Tablet Press.png" />
+    <Content Include="Content\images\products\Zp9 Enhenced Type Rotary Tablet Press.png" />
+    <Content Include="Content\images\products\Zp9 Good Quality High Enhenced Type Rotary Tablet Press.png" />
+    <Content Include="Content\images\products\Zp9 Rotary Tablet Press Machine.png" />
+    <Content Include="Content\images\products\Zpt21 25 Rotary Tablet Press Machine.png" />
+    <Content Include="Content\images\products\Zpw Triple-Layers Color Tablet Press.png" />
+    <Content Include="Content\images\products\Zpw23 Muti-Functional Rotary Tablet Press Machine.png" />
+    <Content Include="Content\images\products\Zpw31 Muti-Functional Rotary Tablet Press Machine.png" />
+    <Content Include="Content\images\typeproduct\capsule.png" />
+    <Content Include="Content\images\typeproduct\liquid.png" />
+    <Content Include="Content\images\typeproduct\tablet.png" />
+    <Content Include="Content\img\1180.gif" />
+    <Content Include="Content\img\about-img.jpg" />
+    <Content Include="Content\img\about_bg.jpg" />
+    <Content Include="Content\img\about_icon1.png" />
+    <Content Include="Content\img\backgroundfooter.jpg" />
+    <Content Include="Content\img\banner-default.jpg" />
+    <Content Include="Content\img\banner.jpg" />
+    <Content Include="Content\img\benefit.PNG" />
+    <Content Include="Content\img\blue-person.png" />
+    <Content Include="Content\img\card.svg" />
+    <Content Include="Content\img\cash.svg" />
+    <Content Include="Content\img\dash.svg" />
+    <Content Include="Content\img\Dettol-GWP.jpg" />
+    <Content Include="Content\img\fb.png" />
+    <Content Include="Content\img\fot_add.png" />
+    <Content Include="Content\img\fot_email.png" />
+    <Content Include="Content\img\fot_tel.png" />
+    <Content Include="Content\img\index.png" />
+    <Content Include="Content\img\lin.png" />
+    <Content Include="Content\img\login-background.jpg" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\logo2.png" />
+    <Content Include="Content\img\news1.jpg" />
+    <Content Include="Content\img\news_bg.jpg" />
+    <Content Include="Content\img\qrcode.svg" />
+    <Content Include="Content\img\sample.jpg" />
+    <Content Include="Content\img\sample1.png" />
+    <Content Include="Content\img\searchicon.png" />
+    <Content Include="Content\img\shutterstock_758040853.jpg" />
+    <Content Include="Content\img\slideimg1.png" />
+    <Content Include="Content\img\slideimg2.png" />
+    <Content Include="Content\img\slideimg3.png" />
+    <Content Include="Content\img\twt.png" />
+    <Content Include="Content\img\type.png" />
+    <Content Include="Content\img\t_bg2.png" />
+    <Content Include="Content\img\values.png" />
+    <Content Include="Content\img\WhyChooseUs_Cross.png" />
+    <Content Include="Content\img\WhyChooseUs_Handshake.png" />
+    <Content Include="Content\img\WhyChooseUs_MadeInUK.png" />
+    <Content Include="Content\img\ytb.png" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="css\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="css\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="css\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="css\lib\bootstrap\js\bootstrap.js" />
+    <Content Include="css\lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="css\lib\font-awesome\css\font-awesome.css" />
+    <Content Include="css\lib\font-awesome\css\font-awesome.min.css" />
+    <Content Include="css\lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="css\lib\gritter-conf.js" />
+    <Content Include="css\lib\jquery.dcjqaccordion.2.7.js" />
+    <Content Include="css\lib\jquery.nicescroll.js" />
+    <Content Include="css\lib\jquery.scrollTo.min.js" />
+    <Content Include="css\lib\jquery.sparkline.js" />
+    <Content Include="css\lib\jquery\jquery.js" />
+    <Content Include="css\lib\jquery\jquery.min.js" />
+    <Content Include="css\style.css" />
+    <Content Include="css\style2.css" />
+    <Content Include="css\style3.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="richtexteditor\docs\demos\autogrow.html" />
+    <Content Include="richtexteditor\docs\demos\basic_editor.html" />
+    <Content Include="richtexteditor\docs\demos\built-in-plugins.html" />
+    <Content Include="richtexteditor\docs\demos\clean-code-on-paste.html" />
+    <Content Include="richtexteditor\docs\demos\codesnippets.html" />
+    <Content Include="richtexteditor\docs\demos\custom_button.html" />
+    <Content Include="richtexteditor\docs\demos\custom_dialog.html" />
+    <Content Include="richtexteditor\docs\demos\custom_dropdown.html" />
+    <Content Include="richtexteditor\docs\demos\custom_toolbar.html" />
+    <Content Include="richtexteditor\docs\demos\default.html" />
+    <Content Include="richtexteditor\docs\demos\drag-and-drop-content.html" />
+    <Content Include="richtexteditor\docs\demos\drag-and-drop-images.html" />
+    <Content Include="richtexteditor\docs\demos\editorsize.html" />
+    <Content Include="richtexteditor\docs\demos\embedvideo.html" />
+    <Content Include="richtexteditor\docs\demos\enterkey.html" />
+    <Content Include="richtexteditor\docs\demos\export-pdf.html" />
+    <Content Include="richtexteditor\docs\demos\fileupload.html" />
+    <Content Include="richtexteditor\docs\demos\getHTML.html" />
+    <Content Include="richtexteditor\docs\demos\insert-html.html" />
+    <Content Include="richtexteditor\docs\demos\javascript_api.html" />
+    <Content Include="richtexteditor\docs\demos\localization.html" />
+    <Content Include="richtexteditor\docs\demos\maxlength.html" />
+    <Content Include="richtexteditor\docs\demos\multiple-editors.html" />
+    <Content Include="richtexteditor\docs\demos\pastefromexcel.html" />
+    <Content Include="richtexteditor\docs\demos\pastefromword.html" />
+    <Content Include="richtexteditor\docs\demos\plain-paste.html" />
+    <Content Include="richtexteditor\docs\demos\readonly.html" />
+    <Content Include="richtexteditor\docs\demos\resize.html" />
+    <Content Include="richtexteditor\docs\demos\responsive.html" />
+    <Content Include="richtexteditor\docs\demos\shortcuts.html" />
+    <Content Include="richtexteditor\docs\demos\skinning_editor.html" />
+    <Content Include="richtexteditor\docs\demos\table-support.html" />
+    <Content Include="richtexteditor\docs\demos\tabspaces.html" />
+    <Content Include="richtexteditor\docs\docs\cmd_allcommands.html" />
+    <Content Include="richtexteditor\docs\docs\configuration-reference.html" />
+    <Content Include="richtexteditor\docs\docs\configuration.html" />
+    <Content Include="richtexteditor\docs\docs\default.html" />
+    <Content Include="richtexteditor\docs\docs\event_change.html" />
+    <Content Include="richtexteditor\docs\docs\event_exec_command.html" />
+    <Content Include="richtexteditor\docs\docs\event_selectionchange.html" />
+    <Content Include="richtexteditor\docs\docs\get-the-html-content-of-rte.html" />
+    <Content Include="richtexteditor\docs\docs\initialization.html" />
+    <Content Include="richtexteditor\docs\docs\install_div.html" />
+    <Content Include="richtexteditor\docs\docs\install_textarea.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_allmethods.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_allproperties.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_attachEvent.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_clearHistory.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_closeCurrentPopup.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_collapse.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_commitBookmark.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_createDialog.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_createToolbarButton.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_createToolbarDropDown.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_delete.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_detachEvent.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_execCommand.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_focus.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_getDocument.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_getEditable.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_getHTMLCode.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_getPlainText.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_getReadOnly.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_getSelectedControl.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_getSelectedText.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_getSelection.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_getSelectionElement.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_htmlDecode.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_htmlEncode.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_insertByTagName.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_insertElement.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_insertHTML.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_insertRootParagraph.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_insertText.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_isCommandActive.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_isCommandEnabled.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_notifySelectionChange.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_selectControl.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_selectDoc.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_setContentCssText.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_setHTMLCode.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_setImageForCommand.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_setPreviewCssText.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_setReadOnly.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_surroundByTagName.html" />
+    <Content Include="richtexteditor\docs\docs\jsapi_surroundElement.html" />
+    <Content Include="richtexteditor\docs\docs\runjsevent.html" />
+    <Content Include="richtexteditor\docs\docs\uploadfiles.html" />
+    <Content Include="richtexteditor\docs\images\editor-image.png" />
+    <Content Include="richtexteditor\docs\images\Rich-Text-Editor.PNG" />
+    <Content Include="richtexteditor\docs\index.html" />
+    <Content Include="richtexteditor\docs\res\patch.js" />
+    <Content Include="richtexteditor\docs\res\style.css" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-af.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-ar.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-bg.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-bn.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-bs.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-ca.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-cs.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-cy.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-da.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-de.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-el.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-en.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-es.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-et.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-fa.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-fi.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-fil.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-fj.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-fr.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-ga.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-gu.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-he.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-hi.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-hr.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-ht.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-hu.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-id.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-is.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-it.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-ja.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-kn.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-ko.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-lt.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-lv.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-mg.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-mi.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-ml.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-mr.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-ms.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-mt.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-mww.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-nb.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-nl.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-otq.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-pa.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-pl.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-pt-pt.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-pt.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-ro.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-ru.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-sk.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-sl.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-sm.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-sr-Cyrl.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-sr-Latn.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-sv.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-sw.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-ta.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-te.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-th.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-tlh-Latn.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-tlh-Piqd.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-to.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-tr.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-ty.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-uk.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-ur.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-vi.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-yua.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-zh-Hans.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang-zh-Hant.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\lang\rte-lang.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\-combine-plugin.txt" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\all_plugins.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\html2pdf.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\imageeditor.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\insertcode.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\insertemoji.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\insertgallery.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\inserttemplate.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\samples\insertcode_v1.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\tui.image-editor\fabric.min.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\tui.image-editor\note.txt" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\tui.image-editor\svg\icon-a.svg" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\tui.image-editor\svg\icon-b.svg" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\tui.image-editor\svg\icon-c.svg" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\tui.image-editor\svg\icon-d.svg" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\tui.image-editor\tui-code-snippet.min.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\tui.image-editor\tui-color-picker.min.css" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\tui.image-editor\tui-color-picker.min.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\tui.image-editor\tui-image-editor.min.css" />
+    <Content Include="richtexteditor\docs\richtexteditor\plugins\tui.image-editor\tui-image-editor.min.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\rte.js" />
+    <Content Include="richtexteditor\docs\richtexteditor\rte_theme_default.css" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\colorpicker_more_ns.htm" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\help.htm" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\1x1.gif" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpie_Color.cur" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpie_GradientPositionDark.gif" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpie_GradientPositionLight.gif" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpie_gradients.png" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpie_VerticalPosition.gif" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpie_WebSafe.gif" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpns_Color.cur" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpns_ColorSpace1.png" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpns_ColorSpace2.png" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpns_GradientPositionDark.gif" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpns_GradientPositionLight.gif" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpns_gradients.png" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpns_hue2.png" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpns_Vertical1.png" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpns_Vertical2.png" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpns_VerticalPosition.gif" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\cpns_WebSafe.gif" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\formbn.gif" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\images\multiclavier.gif" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\richtexteditor_content.css" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\richtexteditor_preview.css" />
+    <Content Include="richtexteditor\docs\richtexteditor\runtime\richtexteditor_preview.js" />
+    <Content Include="richtexteditor\License.txt" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-af.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-ar.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-bg.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-bn.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-bs.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-ca.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-cs.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-cy.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-da.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-de.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-el.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-en.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-es.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-et.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-fa.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-fi.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-fil.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-fj.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-fr.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-ga.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-gu.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-he.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-hi.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-hr.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-ht.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-hu.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-id.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-is.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-it.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-ja.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-kn.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-ko.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-lt.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-lv.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-mg.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-mi.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-ml.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-mr.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-ms.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-mt.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-mww.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-nb.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-nl.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-otq.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-pa.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-pl.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-pt-pt.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-pt.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-ro.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-ru.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-sk.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-sl.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-sm.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-sr-Cyrl.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-sr-Latn.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-sv.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-sw.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-ta.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-te.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-th.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-tlh-Latn.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-tlh-Piqd.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-to.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-tr.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-ty.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-uk.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-ur.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-vi.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-yua.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-zh-Hans.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang-zh-Hant.js" />
+    <Content Include="richtexteditor\richtexteditor\lang\rte-lang.js" />
+    <Content Include="richtexteditor\richtexteditor\plugins\-combine-plugin.txt" />
+    <Content Include="richtexteditor\richtexteditor\plugins\all_plugins.js" />
+    <Content Include="richtexteditor\richtexteditor\plugins\html2pdf.js" />
+    <Content Include="richtexteditor\richtexteditor\plugins\imageeditor.js" />
+    <Content Include="richtexteditor\richtexteditor\plugins\insertcode.js" />
+    <Content Include="richtexteditor\richtexteditor\plugins\insertemoji.js" />
+    <Content Include="richtexteditor\richtexteditor\plugins\insertgallery.js" />
+    <Content Include="richtexteditor\richtexteditor\plugins\inserttemplate.js" />
+    <Content Include="richtexteditor\richtexteditor\plugins\samples\insertcode_v1.js" />
+    <Content Include="richtexteditor\richtexteditor\plugins\tui.image-editor\fabric.min.js" />
+    <Content Include="richtexteditor\richtexteditor\plugins\tui.image-editor\note.txt" />
+    <Content Include="richtexteditor\richtexteditor\plugins\tui.image-editor\svg\icon-a.svg" />
+    <Content Include="richtexteditor\richtexteditor\plugins\tui.image-editor\svg\icon-b.svg" />
+    <Content Include="richtexteditor\richtexteditor\plugins\tui.image-editor\svg\icon-c.svg" />
+    <Content Include="richtexteditor\richtexteditor\plugins\tui.image-editor\svg\icon-d.svg" />
+    <Content Include="richtexteditor\richtexteditor\plugins\tui.image-editor\tui-code-snippet.min.js" />
+    <Content Include="richtexteditor\richtexteditor\plugins\tui.image-editor\tui-color-picker.min.css" />
+    <Content Include="richtexteditor\richtexteditor\plugins\tui.image-editor\tui-color-picker.min.js" />
+    <Content Include="richtexteditor\richtexteditor\plugins\tui.image-editor\tui-image-editor.min.css" />
+    <Content Include="richtexteditor\richtexteditor\plugins\tui.image-editor\tui-image-editor.min.js" />
+    <Content Include="richtexteditor\richtexteditor\rte.js" />
+    <Content Include="richtexteditor\richtexteditor\rte_theme_default.css" />
+    <Content Include="richtexteditor\richtexteditor\runtime\colorpicker_more_ns.htm" />
+    <Content Include="richtexteditor\richtexteditor\runtime\help.htm" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\1x1.gif" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpie_Color.cur" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpie_GradientPositionDark.gif" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpie_GradientPositionLight.gif" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpie_gradients.png" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpie_VerticalPosition.gif" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpie_WebSafe.gif" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpns_Color.cur" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpns_ColorSpace1.png" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpns_ColorSpace2.png" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpns_GradientPositionDark.gif" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpns_GradientPositionLight.gif" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpns_gradients.png" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpns_hue2.png" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpns_Vertical1.png" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpns_Vertical2.png" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpns_VerticalPosition.gif" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\cpns_WebSafe.gif" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\formbn.gif" />
+    <Content Include="richtexteditor\richtexteditor\runtime\images\multiclavier.gif" />
+    <Content Include="richtexteditor\richtexteditor\runtime\richtexteditor_content.css" />
+    <Content Include="richtexteditor\richtexteditor\runtime\richtexteditor_preview.css" />
+    <Content Include="richtexteditor\richtexteditor\runtime\richtexteditor_preview.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\glide-master\.babelrc" />
+    <Content Include="Content\css\glide-master\.editorconfig" />
+    <Content Include="Content\css\glide-master\.eslintrc" />
+    <Content Include="Content\css\glide-master\.github\FUNDING.yml" />
+    <Content Include="Content\css\glide-master\.github\main.workflow" />
+    <Content Include="Content\css\glide-master\.npmignore" />
+    <Content Include="Content\css\glide-master\.stylelintrc" />
+    <Content Include="Content\css\glide-master\.travis.yml" />
+    <Content Include="Content\css\glide-master\LICENSE" />
+    <Content Include="Content\css\glide-master\package-lock.json" />
+    <Content Include="Content\css\glide-master\package.json" />
+    <Content Include="Content\css\glide-master\README.md" />
+    <Content Include="Content\css\glide-master\src\assets\sass\glide.core.scss" />
+    <Content Include="Content\css\glide-master\src\assets\sass\glide.theme.scss" />
+    <Content Include="Content\css\glide-master\src\assets\sass\_variables.scss" />
+    <Content Include="Content\css\glide-master\tests\config.json" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\.travis.yml" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\bower.json" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\CONTRIBUTING.md" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\dist\LICENSE" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\dist\README.md" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\owlcarousel\README.md" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.map" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\ISSUE_TEMPLATE.md" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\LICENSE" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\package-lock.json" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\package.json" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\README.md" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\ROADMAP.md" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\js\.jscsrc" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\js\.jshintrc" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\scss\owl.carousel.scss" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\scss\owl.theme.default.scss" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\scss\owl.theme.green.scss" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\scss\_animate.scss" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\scss\_autoheight.scss" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\scss\_core.scss" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\scss\_lazyload.scss" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\scss\_theme.default.scss" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\scss\_theme.green.scss" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\scss\_theme.scss" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\src\scss\_video.scss" />
+    <Content Include="Content\css\OwlCarousel2-2.3.4\_config.json" />
+    <Content Include="Content\images\products\Rotary Core Coated Tablet Press.png.crdownload" />
+    <Content Include="css\lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="css\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="css\lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="css\lib\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="css\lib\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\lib\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\lib\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="css\lib\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Scripts\ckeditor\adapters\jquery.js" />
+    <Content Include="Scripts\ckeditor\CHANGES.html" />
+    <Content Include="Scripts\ckeditor\ckeditor.asp" />
+    <Content Include="Scripts\ckeditor\ckeditor.js" />
+    <Content Include="Scripts\ckeditor\ckeditor.pack" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ckeditor.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminHome\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Customer\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Customer\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Customer\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Customer\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Manufacturer\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Manufacturer\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Manufacturer\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Manufacturer\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Manufacturer\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Nation\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Nation\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Nation\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Nation\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Nation\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\OrderProduct\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\OrderProduct\DetailOrder.cshtml" />
+    <Content Include="Areas\Admin\Views\OrderProduct\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\OrderProduct\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Staff\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Staff\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Staff\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Staff\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Staff\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\TypeProduct\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\TypeProduct\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\TypeProduct\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\TypeProduct\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\TypeProduct\Index.cshtml" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="Content\css\login\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-Black.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-BlackItalic.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-Bold.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-BoldItalic.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-ExtraBold.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-ExtraLight.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-Italic.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-Light.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-LightItalic.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-Medium.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-MediumItalic.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-Regular.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-SemiBold.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-Thin.ttf" />
+    <Content Include="Content\css\login\fonts\montserrat\Montserrat-ThinItalic.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="Content\css\login\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="Content\css\login\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Content\css\login\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Content\css\login\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Content\css\login\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\css\login\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Content\css\login\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Areas\Admin\Views\AdminCandidate\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminCandidate\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminCandidate\SendMail.cshtml" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Content\CV Files\3-5-2021.docx" />
+    <Content Include="Content\CV Files\NGUYEN-XUAN-KHOI-CV.docx" />
+    <Content Include="Content\CV Files\NGUYEN-XUAN-KHOI-CV.pdf" />
+    <Content Include="Areas\Admin\Views\AdminCandidate\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Customer\Details.cshtml" />
+    <Content Include="richtexteditor\README.md" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\ckeditor\ckeditor.php" />
+    <Content Include="Scripts\ckeditor\ckeditor_basic.js" />
+    <Content Include="Scripts\ckeditor\ckeditor_basic_source.js" />
+    <Content Include="Scripts\ckeditor\ckeditor_php4.php" />
+    <Content Include="Scripts\ckeditor\ckeditor_php5.php" />
+    <Content Include="Scripts\ckeditor\ckeditor_source.js" />
+    <Content Include="Scripts\ckeditor\config.js" />
+    <Content Include="Scripts\ckeditor\contents.css" />
+    <Content Include="Scripts\ckeditor\images\spacer.gif" />
+    <Content Include="Scripts\ckeditor\INSTALL.html" />
+    <Content Include="Scripts\ckeditor\lang\af.js" />
+    <Content Include="Scripts\ckeditor\lang\ar.js" />
+    <Content Include="Scripts\ckeditor\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\lang\bn.js" />
+    <Content Include="Scripts\ckeditor\lang\bs.js" />
+    <Content Include="Scripts\ckeditor\lang\ca.js" />
+    <Content Include="Scripts\ckeditor\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\lang\da.js" />
+    <Content Include="Scripts\ckeditor\lang\de.js" />
+    <Content Include="Scripts\ckeditor\lang\el.js" />
+    <Content Include="Scripts\ckeditor\lang\en-au.js" />
+    <Content Include="Scripts\ckeditor\lang\en-ca.js" />
+    <Content Include="Scripts\ckeditor\lang\en-gb.js" />
+    <Content Include="Scripts\ckeditor\lang\en.js" />
+    <Content Include="Scripts\ckeditor\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\lang\es.js" />
+    <Content Include="Scripts\ckeditor\lang\et.js" />
+    <Content Include="Scripts\ckeditor\lang\eu.js" />
+    <Content Include="Scripts\ckeditor\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\lang\fo.js" />
+    <Content Include="Scripts\ckeditor\lang\fr-ca.js" />
+    <Content Include="Scripts\ckeditor\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\lang\gl.js" />
+    <Content Include="Scripts\ckeditor\lang\gu.js" />
+    <Content Include="Scripts\ckeditor\lang\he.js" />
+    <Content Include="Scripts\ckeditor\lang\hi.js" />
+    <Content Include="Scripts\ckeditor\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\lang\hu.js" />
+    <Content Include="Scripts\ckeditor\lang\id.js" />
+    <Content Include="Scripts\ckeditor\lang\is.js" />
+    <Content Include="Scripts\ckeditor\lang\it.js" />
+    <Content Include="Scripts\ckeditor\lang\ja.js" />
+    <Content Include="Scripts\ckeditor\lang\ka.js" />
+    <Content Include="Scripts\ckeditor\lang\km.js" />
+    <Content Include="Scripts\ckeditor\lang\ko.js" />
+    <Content Include="Scripts\ckeditor\lang\lt.js" />
+    <Content Include="Scripts\ckeditor\lang\lv.js" />
+    <Content Include="Scripts\ckeditor\lang\mk.js" />
+    <Content Include="Scripts\ckeditor\lang\mn.js" />
+    <Content Include="Scripts\ckeditor\lang\ms.js" />
+    <Content Include="Scripts\ckeditor\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\lang\no.js" />
+    <Content Include="Scripts\ckeditor\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\lang\pt.js" />
+    <Content Include="Scripts\ckeditor\lang\ro.js" />
+    <Content Include="Scripts\ckeditor\lang\ru.js" />
+    <Content Include="Scripts\ckeditor\lang\sk.js" />
+    <Content Include="Scripts\ckeditor\lang\sl.js" />
+    <Content Include="Scripts\ckeditor\lang\sr-latn.js" />
+    <Content Include="Scripts\ckeditor\lang\sr.js" />
+    <Content Include="Scripts\ckeditor\lang\sv.js" />
+    <Content Include="Scripts\ckeditor\lang\th.js" />
+    <Content Include="Scripts\ckeditor\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\lang\zh.js" />
+    <Content Include="Scripts\ckeditor\lang\_languages.js" />
+    <Content Include="Scripts\ckeditor\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\LICENSE.html" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\da.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\gu.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\mk.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\ro.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="Scripts\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="Scripts\ckeditor\plugins\adobeair\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\ajax\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\autogrow\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\bbcode\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="Scripts\ckeditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\da.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\et.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\gu.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="Scripts\ckeditor\plugins\div\dialogs\div.js" />
+    <Content Include="Scripts\ckeditor\plugins\docprops\dialogs\docprops.js" />
+    <Content Include="Scripts\ckeditor\plugins\docprops\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="Scripts\ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="Scripts\ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\button.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\form.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\select.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="Scripts\ckeditor\plugins\iframedialog\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="Scripts\ckeditor\plugins\iframe\images\placeholder.png" />
+    <Content Include="Scripts\ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="Scripts\ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="Scripts\ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="Scripts\ckeditor\plugins\link\images\anchor.gif" />
+    <Content Include="Scripts\ckeditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="Scripts\ckeditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="Scripts\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="Scripts\ckeditor\plugins\pastetext\dialogs\pastetext.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\dialogs\placeholder.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\da.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\et.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\placeholder.gif" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\preview\preview.html" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\et.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\stylesheetparser\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\styles\styles\default.js" />
+    <Content Include="Scripts\ckeditor\plugins\tableresize\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="Scripts\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="Scripts\ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\dialogs\uicolor.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\da.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\et.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\mk.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\uicolor.gif" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\assets\hue_bg.png" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\assets\hue_thumb.png" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\assets\picker_mask.png" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\assets\picker_thumb.png" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\assets\yui.css" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\yui.js" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="Scripts\ckeditor\plugins\xml\plugin.js" />
+    <Content Include="Scripts\ckeditor\skins\kama\dialog.css" />
+    <Content Include="Scripts\ckeditor\skins\kama\editor.css" />
+    <Content Include="Scripts\ckeditor\skins\kama\icons.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\icons_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\dialog_sides.gif" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\dialog_sides.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\dialog_sides_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\mini.gif" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\noimage.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\sprites.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\sprites_ie6.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\toolbar_start.gif" />
+    <Content Include="Scripts\ckeditor\skins\kama\skin.js" />
+    <Content Include="Scripts\ckeditor\skins\kama\templates.css" />
+    <Content Include="Scripts\ckeditor\skins\office2003\dialog.css" />
+    <Content Include="Scripts\ckeditor\skins\office2003\editor.css" />
+    <Content Include="Scripts\ckeditor\skins\office2003\icons.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\icons_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\dialog_sides.gif" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\dialog_sides.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\dialog_sides_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\mini.gif" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\noimage.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\sprites.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\sprites_ie6.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\skin.js" />
+    <Content Include="Scripts\ckeditor\skins\office2003\templates.css" />
+    <Content Include="Scripts\ckeditor\skins\v2\dialog.css" />
+    <Content Include="Scripts\ckeditor\skins\v2\editor.css" />
+    <Content Include="Scripts\ckeditor\skins\v2\icons.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\icons_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\dialog_sides.gif" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\dialog_sides.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\dialog_sides_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\mini.gif" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\noimage.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\sprites.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\sprites_ie6.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\toolbar_start.gif" />
+    <Content Include="Scripts\ckeditor\skins\v2\skin.js" />
+    <Content Include="Scripts\ckeditor\skins\v2\templates.css" />
+    <Content Include="Scripts\ckeditor\themes\default\theme.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout2.cshtml" />
+    <Content Include="Views\Home\TypePage.cshtml" />
+    <Content Include="Views\Home\BrandPage.cshtml" />
+    <Content Include="Views\Home\Details.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\Home\History.cshtml" />
+    <Content Include="Views\Home\DetailOrder.cshtml" />
+    <Content Include="Views\Home\PurchaseHistory.cshtml" />
+    <Content Include="Views\Candidate\Index.cshtml" />
+    <Content Include="Views\Candidate\LogIn.cshtml" />
+    <Content Include="Views\Candidate\Update.cshtml" />
+    <Content Include="Views\Cart\Index.cshtml" />
+    <Content Include="Views\Cart\OrderSuccess.cshtml" />
+    <Content Include="Views\Shared\_LayoutCandidate.cshtml" />
+    <Content Include="Views\Candidate\Register.cshtml" />
+    <Content Include="Views\Candidate\Profile.cshtml" />
+    <Content Include="Views\Candidate\ContactUs.cshtml" />
+    <Content Include="Views\Candidate\JoinUs.cshtml" />
+    <Content Include="Views\Home\Quote.cshtml" />
+    <Content Include="Views\Home\EditQuote.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1080</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1080/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

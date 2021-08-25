@@ -1,0 +1,44 @@
+﻿@model G3Pharmaceuticals.Models.TypeProduct
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Type Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.typeID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.typeID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.typeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.typeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.images)
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(model => model.images)*@
+            <img src="~/Content/images/typeproduct/@Html.DisplayFor(model => model.images)" width="100px" />
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.typeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

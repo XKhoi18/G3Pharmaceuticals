@@ -1,0 +1,155 @@
+﻿@model G3Pharmaceuticals.Models.Candidate
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Candidate</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EducationDetails)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EducationDetails)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(model => model.Password)*@
+            ****************
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InterviewDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InterviewDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InterviewNote)
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(model => model.InterviewNote)*@
+            @Html.Raw(Model.InterviewNote)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(model => model.Status)*@
+            @{
+                if (Model.Status == 0)
+                {
+                    <div>Processing</div>
+                }
+                else if (Model.Status == 1)
+                {
+                    <div>CV Evaluating</div>
+                }
+                else if (Model.Status == 2)
+                {
+                    <div>CV Evaluate Failed</div>
+                }
+                else if (Model.Status == 3)
+                {
+                    <div>InterView Evaluating</div>
+                }
+                else
+                {
+                    <div>InterView Failed</div>
+                }
+            }
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Staff.StaffName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Staff.StaffName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CandidateID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

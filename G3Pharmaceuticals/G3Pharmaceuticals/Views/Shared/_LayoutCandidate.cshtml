@@ -1,0 +1,115 @@
+﻿@using G3Pharmaceuticals.Models;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Font Static -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Viaoda+Libre&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Montserrat:wght@800&display=swap" rel="stylesheet" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="~/Content/css/index_candidate.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container-fluid">
+            <div class="header-logo">
+                <a href="@Url.Action("Index","Candidate")" class="logo-content">
+                    <img src="~/Content/img/logo2.png" alt="">
+                    <div class="header-logo-text">
+                        <h2>JOB <br /> APPLICATION</h2>
+                        <h3>Home</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="header-ul">
+                <ul class="ul-funct">
+                    @if (Session["candidate"] != null)
+                    {
+                    <li class="dropdown-box">
+                        <a class="header-li-item" href="#"><i class="fa fa-user" style="padding-right: 5px;"></i> My Account </a>
+                        <div class="dropdown-content">
+                            <a class="nav__items" href="~/Candidate/Profile?id=@Session["candidate"]">My Profile</a>
+                            <a class="nav__items" href="@Url.Action("LogOut", "Candidate")">Log Out</a>
+                        </div>
+                    </li>
+                    }
+                    else
+                    {
+                        <li class="dropdown-box">
+                            <a class="header-li-item" href="#"><i class="fa fa-user" style="padding-right: 5px;"></i> Sign In / Register </a>
+                            <div class="dropdown-content">
+                                <a class="nav__items" href="@Url.Action("LogIn", "Candidate")">Sign In</a>
+                                <a class="nav__items" href="@Url.Action("Register", "Candidate")">Register</a>
+                            </div>
+                        </li>
+                    }
+                    <li><a class="header-li-item" href="@Url.Action("ContactUs","Candidate")"><i class="fa fa-phone" style="padding-right: 5px;"></i> Contact Us</a></li>
+                    <li><a class="header-li-item" href="@Url.Action("JoinUs","Candidate")"><i class="fa fa-book" style="padding-right: 5px;"></i> Join Us</a></li>
+                    <li><a class="header-li-item" href="@Url.Action("Index","Home")"><i class="fa fa-home" style="padding-right: 5px;"></i> Our Store</a></li>
+                </ul>
+                <ul class="ul-social">
+                    <li><a class="header-li-item" href=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="header-li-item" href=""><i class="fa fa-linkedin"></i></a></li>
+                    <li><a class="header-li-item" href=""><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-title-big">
+            <img src="~/Content/img/banner-default.jpg" alt="">
+            <span class="title-big">@ViewBag.Title</span>
+        </div>
+    </header>
+
+    <div class="main-content">
+        @RenderBody()
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="footer-container-fluid">
+            <div class="footer-logo">
+                <a href="#" class="logo-content">
+                    <img src="~/Content/img/logo2.png" alt="">
+                    <div class="header-logo-text">
+                        <h2>HIGHWIND <br /> CAREERS</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="footer-contact">
+                <div class="footer-social">
+                    <div class="connect-us">
+                        <span class="footer-title">Connect with HighWind Job Application Center</span>
+                        <ul class="footer-ul-social">
+                            <li><a class="footer-li-item" href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="footer-li-item" href=""><i class="fa fa-linkedin"></i></a></li>
+                            <li><a class="footer-li-item" href=""><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-us">
+                        <span class="footer-title">Contact Us</span>
+                        <p style="color: #848689;"><strong>Tel:</strong> +84 33 516 7610</p>
+                        <p style="color: #848689;"><strong>Fax:</strong> +84-512-58922893</p>
+                        <p style="color: #848689;"><strong>Email:</strong> highwindenterprise@gmail.com</p>
+                        <p style="color: #848689;">
+                            <strong>Address:</strong> Floor 1 - Ha Son Tower, 277A Nguyen Van Dau St. <br />
+                            Ward 11, Binh Thanh District, Ho Chi Minh City
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p style="color: #848689;">
+                        © Copyright HighWind Pharmaceutical 2021. All rights reserved
+
+                        Recruitment Website by Nguyen Nhat Tien & Nguyen Xuan Khoi
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6be5d51531ad4b309f98cec353fab666" Name="Diagram1">
+        <EntityTypeShape EntityType="PharmacyDBModel.Candidate" Width="1.5" PointX="5.25" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PharmacyDBModel.Customer" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PharmacyDBModel.Manufacturer" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PharmacyDBModel.Nation" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PharmacyDBModel.OrderDetail" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PharmacyDBModel.Orderpro" Width="1.5" PointX="5.25" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PharmacyDBModel.Product" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="PharmacyDBModel.Staff" Width="1.5" PointX="3" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PharmacyDBModel.TypeProduct" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <AssociationConnector Association="PharmacyDBModel.FK_Candidate_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="PharmacyDBModel.FK_Order_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="PharmacyDBModel.FK_Manufacturer_Nation" ManuallyRouted="false" />
+        <AssociationConnector Association="PharmacyDBModel.FK_Product_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="PharmacyDBModel.FK_OrderDetail_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="PharmacyDBModel.FK_OrderDetail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="PharmacyDBModel.FK_Order_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="PharmacyDBModel.FK_Product_Type" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

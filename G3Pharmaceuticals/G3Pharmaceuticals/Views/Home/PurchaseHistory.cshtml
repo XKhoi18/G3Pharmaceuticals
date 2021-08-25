@@ -1,0 +1,74 @@
+﻿@model IEnumerable<G3Pharmaceuticals.Models.Orderpro>
+
+@{
+    ViewBag.Title = "PurchaseHistory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Purchase History</h2>
+
+<table class="table" style="width: 100%;">
+    <tr>
+        <th style="text-align:center">
+            Order ID
+        </th>
+        <th style="text-align:center">
+            Order Date
+        </th>
+        <th style="text-align:center">
+            Customer Name
+        </th>
+        <th style="text-align:center">
+            Status
+        </th>
+        <th></th>
+    </tr>
+    @if (Model == null || Model.Count() <= 0)
+    {
+        <tr>
+            <td colspan="6" style="text-align:center">
+                <strong>You have not purchased anything! @Html.ActionLink("Click here", "Index", "Home")</strong> to continue shopping.
+            </td>
+        </tr>
+    }
+    else
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.OrderID)
+                </td>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.OrderDate)
+                </td>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.Customer.CustomerName)
+                </td>
+                <td style="text-align:center">
+                    @{
+                        if (item.Status == 0)
+                        {
+                            <div>Processing</div>
+                        }
+                        else if (item.Status == 1)
+                        {
+                            <div>Delivery in Progress</div>
+                        }
+                        else
+                        {
+                            <div>Paid</div>
+                        }
+                    }
+                </td>
+                <td style="text-align:center">
+                    @Html.ActionLink("Details", "DetailOrder", new { id = item.OrderID })
+                </td>
+            </tr>
+        }
+        <tr>
+            <td colspan="6"><strong>@Html.ActionLink("Back to Home", "Index", "Home")</strong></td>
+        </tr>
+        }
+
+</table>

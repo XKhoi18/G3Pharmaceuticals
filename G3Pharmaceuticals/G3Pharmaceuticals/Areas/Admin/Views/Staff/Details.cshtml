@@ -1,0 +1,87 @@
+﻿@model G3Pharmaceuticals.Models.Staff
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Staff</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StaffName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StaffName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaxCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaxCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(model => model.Password)*@
+            *******************
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Images)
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(model => model.Image)*@
+            <img src="~/Content/images/id photo/@Html.DisplayFor(model => model.Images)" width="300px" />
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.StaffID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

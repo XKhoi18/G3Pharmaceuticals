@@ -1,0 +1,97 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Admin</title>
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Bootstrap core CSS -->
+    <link href="~/css/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--external css-->
+    <link href="~/css/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="~/css/style2.css" rel="stylesheet">
+    <link href="~/css/style-responsive.css" rel="stylesheet">
+</head>
+
+<body>
+    <section id="container">
+        <!-- HEADER -->
+        <header class="header black-bg">
+            <div class="sidebar-toggle-box">
+                <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+            </div>
+            <!--logo start-->
+            <a href="~/Admin/Login/Index" class="logo"><b>G3PHARMACEUTICALS<span>ADMIN</span></b></a>
+            <!--logo end-->
+            <div class="top-menu">
+                <ul class="nav pull-right top-menu">
+                    <li><a class="logout">Welcome</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!--MAIN CONTENT-->
+        <section id="main-content-admin">
+            <div class="container-body">
+                <div class="wrapper fadeInDown">
+                    <div id="formContent">
+                        <!-- Login Form -->
+                        <form action="" method="post" onsubmit="return CheckData();">
+                            <br>
+                            <h1>Welcome Admin</h1>
+                            <input type="text" id="username" class="fadeIn second" name="username" placeholder="login">
+                            <div class="text-warning"> <label id="error_us"></label></div>
+                            <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
+                            <div class="text-warning"> <label id="error_pw"></label></div>
+                            <input type="submit" class="fadeIn fourth" value="Log In">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <div class="footer">
+                <span><i><b>*Address:</b></i> 1416, Le Duc Tho St, Ward 13, Go Vap District, Ho Chi Minh City.</span> <br>
+                <span><i><b>*Mobile Phone:</b></i> 0335 167 610</span><br>
+                <span><i><b>*Facebook:</b></i><a class="facebook" href="facebook.com/g5electronicshop"> G3Pharmaceuticals</a></span><br>
+                <span><i><b>*Email:</b></i><a class="email" href="mailto:g3pharmaceuticals@gmail.com"> g3pharmaceuticals@gmail.com</a></span>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        function CheckData() {
+            var user = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+
+            if (user == "") {
+                document.getElementById("error_us").innerHTML = "Input Username";
+                return false;
+            }
+            else {
+                document.getElementById("error_us").innerHTML = "";
+            }
+
+            if (pass == "") {
+                document.getElementById("error_pw").innerHTML = "Input Password";
+                return false;
+            }
+            else {
+                document.getElementById("error_pw").innerHTML = "";
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>
+

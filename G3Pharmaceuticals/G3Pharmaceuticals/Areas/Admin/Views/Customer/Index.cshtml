@@ -1,0 +1,84 @@
+﻿@model IEnumerable<G3Pharmaceuticals.Models.Customer>
+
+@{
+    ViewBag.Title = "Customer";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Customer</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary btn-large" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaxCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Representative)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassWord)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaxCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Representative)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.PassWord)*@
+                *******************
+            </td>
+            <td style="font-size:18px;">
+                @Html.ActionLink(" ", "Edit", new { id = item.CustomerID }, new { @class = "glyphicon glyphicon-edit" }) |
+                @Html.ActionLink(" ", "Details", new { id = item.CustomerID }, new { @class = "glyphicon glyphicon-folder-open" }) |
+                @Html.ActionLink(" ", "Delete", new { id = item.CustomerID }, new { @class = "glyphicon glyphicon-trash" })
+            </td>
+        </tr>
+    }
+
+</table>

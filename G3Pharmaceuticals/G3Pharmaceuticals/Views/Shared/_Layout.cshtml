@@ -1,0 +1,362 @@
+﻿@using G3Pharmaceuticals.Models
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="~/Content/css/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/css/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Font Static -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Viaoda+Libre&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Montserrat:wght@800&display=swap" rel="stylesheet" />
+    <!-- Glide CSS -->
+    <link rel="stylesheet" href="~/Content/css/glide-master/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="~/Content/css/glide-master/dist/css/glide.theme.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="~/Content/css/index.css">
+    <link rel="stylesheet" href="~/Content/PagedList.css" />
+</head>
+<body>
+    <!-- ---------------- -->
+    <!--   GO TOP BUTTON  -->
+    <!-- ---------------- -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+    <!-- ---------------- -->
+    <!-- TOP HEAD CONTENT -->
+    <!-- ---------------- -->
+    <div class="top_head" id="myHeader">
+        <div class="content_top_head">
+            <!-- ----------------- -->
+            <!-- LOG IN / REGISTER -->
+            <!-- ----------------- -->
+            @if (Session["customer"] != null)
+            {
+            <div class="signin_register dropdown-box">
+                <a class="top_content" href="#"><i class="fa fa-user" style="padding-right: 5px;"></i> My Account </a>
+                <div class="dropdown-content">
+                    <a class="nav__items" href="@Url.Action("PurchaseHistory", "Home")">Purchase History</a>
+                    <a class="nav__items" href="@Url.Action("LogOut", "Home")">Log Out</a>
+                </div>
+            </div>
+            }
+            else
+            {
+            <div class="signin_register">
+                <a class="top_content" href="@Url.Action("LogIn", "Home")"><i class="fa fa-user" style="padding-right: 5px;"></i> Sign In / </a> <a class="top_content" href="@Url.Action("Register", "Home")"> Register </a>
+            </div>
+            }
+            <div class="other_content">
+                <a class="top_content" href="@Url.Action("About","Home")"><i class="fa fa-book" style="padding-right: 5px;"></i> About Us</a>
+                <a class="top_content" href="@Url.Action("Contact","Home")"><i class="fa fa-phone" style="padding-right: 5px;"></i> Contact Us</a>
+                <a class="top_content" href="@Url.Action("Index","Candidate")"><i class="fa fa-question" style="padding-right: 5px;"></i> Careers</a>
+                <a class="top_content" href="@Url.Action("Index","Cart")"><i class="fa fa-shopping-cart" style="padding-right: 5px;"></i> Your Order</a>
+                <a class="top_content" href="@Url.Action("Quote","Home")"><i class="fa fa-comment" style="padding-right: 5px;"></i> Quote Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------- -->
+    <!--      HEADER      -->
+    <!-- ---------------- -->
+    <header class="header">
+        <!-- ---------------- -->
+        <!-- LOGO AND SEARCH  -->
+        <!-- ---------------- -->
+        <div class="logo_and_search">
+            <div class="logo">
+                <a href="@Url.Action("Index","Home")"><img src="~/Content/img/logo.png" alt="logo"></a>
+            </div>
+            <div class="search_promote">
+                <div class="searchbar">
+                    <input type="text" id="searchinput" placeholder="Search...">
+                    <button type="submit" class="search-button"></button>
+                </div>
+                <div class="promote">
+                    <img src="~/Content/img/dash.svg" width="15%" alt="|">
+                    <div class="text_promote">
+                        <span class="promote_title">CONTACT NOW</span>
+                        <span class="sub_title">For enterprise's services</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------- -->
+        <!-- NAVBAR TYPE MED  -->
+        <!-- ---------------- -->
+        <div class="navbar_type_med">
+            <ul>
+                <li><a class="nav_items" href="@Url.Action("TypePage", "Home", new { typeid = 0 }, null)">All Products</a></li>
+                @foreach (TypeProduct item in ViewBag.menu)
+                {
+                    <li><a class="nav_items" href="@Url.Action("TypePage", "Home", new { typeid = item.typeID }, null)">@item.typeName</a></li>
+                }
+            </ul>
+        </div>
+    </header>
+
+    <!-- ---------------- -->
+    <!--    MAIN CONTENT  -->
+    <!-- ---------------- -->
+    <div class="main_content">
+        @RenderBody()
+    </div>
+    <!-- ----------------- -->
+    <!--    ABOUT & NEWS   -->
+    <!-- ----------------- -->
+    <div class="about_tab">
+        <div class="about_img_cover">
+            <img src="~/Content/img/about-img.jpg" width="100%" alt="">
+        </div>
+        <div class="about_content_index">
+            <h2>Welcome to HighWind Pharmaceuticals Co., Ltd.</h2>
+            <span>ABOUT US</span>
+            <div class="content_text_index">HighWind Pharmaceuticals Co., Ltd. has the manufacturing history of over 28 years experience in manufacturing pharmaceutical and packing machinery. Our company registered capital is 10 million RMB. Located in Ho Chi Minh City, With convenient transportation and excellent port conditions, Can provide one-stop service, including complete procurement, customs clearance, installation, overseas debugging training services for customers. The scale of HighWind's factory reaches 7,996 m2, has 28 R & D Engineers and 52 sets of equipment such as laser</div>
+            <a href="@Url.Action("About", "Home")"><div class="about_btn">READ MORE</div></a>
+        </div>
+    </div>
+
+    <div class="index_news">
+        <div class="index_news_top">
+            <div class="container_news_top">
+                <div class="in_title">
+                    <span>Latest News</span>
+                    <p>HighWind Pharmaceuticals Co., Ltd. has a history of 28 years experience in manufacturing pharmaceutical machinery and packing machinery.</p>
+                </div>
+            </div>
+        </div>
+        <div class="in_news_container">
+            <div class="in_one_card">
+                <a href="/welcome-to-the-production-workshop-of-aluminum-plastic-blister-machine_n54" title="Welcome to the Production Workshop of Aluminum Plastic Blister Machine" class="img"><img src="~/Content/img/news1.jpg" alt="Welcome to the Production Workshop of Aluminum Plastic Blister Machine"></a>
+                <div class="in_wrap">
+                    <a href="/welcome-to-the-production-workshop-of-aluminum-plastic-blister-machine_n54" title="Welcome to the Production Workshop of Aluminum Plastic Blister Machine" class="title">Welcome to the Production Workshop of Aluminum Plastic Blister Machine</a>
+                    <div class="line"></div>
+                    <p>After nearly 30 years of struggle and accumulated experience, our company has established a production base of nearly 10000 square meters in Zhejiang Province, in which the workshop area for manufacturing aluminum-plastic blister machine exceeds 2000 square meters. &nbsp; Let me introduce the high-end aluminum plastic blister packing&nbsp;machine 260r produced by this professional workshop. &nbsp; Blister packing machine is extremely excellent and professional in solid&nbsp;type materials&nbsp;packing and it has been sold to numerous countries and regions and it has successfully obtained numerous praises from customers. &nbsp; The customers at homeland or&nbsp;abroad deeply appreciate it and we have been professional in making pharmaceutical and packing machines for many years thus we are professional. &nbsp; It is extremely excellent in it stop&nbsp;high speed which can successfully and timely meet the urgent orders of clients. &nbsp; DPP 260 R-type Blister packing machine is extremely excellent in its cleaning and maintenance due to its scientific and reasonable design of large platform. &nbsp; It is excellent in its setting of the PVC and PET&nbsp;fragments stop as well as automatic alarm which can efficiently reduce the waste rate of product to ensure the raw material usage. &nbsp; The whole set of mould can be quickly to replace for users&nbsp;and it can be rapidly and convenient installed within an extremely short time of 10 minutes. &nbsp; Blister packer&nbsp;machine has an extremely high degree of safety because all the parts of this equipment are equipped with safety covers to safely protect the people who use it. &nbsp; This equipment completely meets the standard rules of GMP cGMP CE ISO and we have our own professional team in our professional factory. &nbsp; This blister pack machinery&nbsp;is extremely excellent in its noise pollution protection because it is extremely low in noise of less than &lt;75dBA to ensure relatively quiet environment.</p>
+                    <div class="news_other">
+                        <a href="/welcome-to-the-production-workshop-of-aluminum-plastic-blister-machine_n54" title="Welcome to the Production Workshop of Aluminum Plastic Blister Machine" rel="nofollow">Read More <i class="fa fa-angle-right"></i></a>
+                        <span><i class="fa fa-calendar"></i>Jun 18, 2021</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="in_one_card">
+                <a href="/welcome-to-the-production-workshop-of-aluminum-plastic-blister-machine_n54" title="Welcome to the Production Workshop of Aluminum Plastic Blister Machine" class="img"><img src="~/Content/img/news1.jpg" alt="Welcome to the Production Workshop of Aluminum Plastic Blister Machine"></a>
+                <div class="in_wrap">
+                    <a href="/welcome-to-the-production-workshop-of-aluminum-plastic-blister-machine_n54" title="Welcome to the Production Workshop of Aluminum Plastic Blister Machine" class="title">Welcome to the Production Workshop of Aluminum Plastic Blister Machine</a>
+                    <div class="line"></div>
+                    <p>After nearly 30 years of struggle and accumulated experience, our company has established a production base of nearly 10000 square meters in Zhejiang Province, in which the workshop area for manufacturing aluminum-plastic blister machine exceeds 2000 square meters. &nbsp; Let me introduce the high-end aluminum plastic blister packing&nbsp;machine 260r produced by this professional workshop. &nbsp; Blister packing machine is extremely excellent and professional in solid&nbsp;type materials&nbsp;packing and it has been sold to numerous countries and regions and it has successfully obtained numerous praises from customers. &nbsp; The customers at homeland or&nbsp;abroad deeply appreciate it and we have been professional in making pharmaceutical and packing machines for many years thus we are professional. &nbsp; It is extremely excellent in it stop&nbsp;high speed which can successfully and timely meet the urgent orders of clients. &nbsp; DPP 260 R-type Blister packing machine is extremely excellent in its cleaning and maintenance due to its scientific and reasonable design of large platform. &nbsp; It is excellent in its setting of the PVC and PET&nbsp;fragments stop as well as automatic alarm which can efficiently reduce the waste rate of product to ensure the raw material usage. &nbsp; The whole set of mould can be quickly to replace for users&nbsp;and it can be rapidly and convenient installed within an extremely short time of 10 minutes. &nbsp; Blister packer&nbsp;machine has an extremely high degree of safety because all the parts of this equipment are equipped with safety covers to safely protect the people who use it. &nbsp; This equipment completely meets the standard rules of GMP cGMP CE ISO and we have our own professional team in our professional factory. &nbsp; This blister pack machinery&nbsp;is extremely excellent in its noise pollution protection because it is extremely low in noise of less than &lt;75dBA to ensure relatively quiet environment.</p>
+                    <div class="news_other">
+                        <a href="/welcome-to-the-production-workshop-of-aluminum-plastic-blister-machine_n54" title="Welcome to the Production Workshop of Aluminum Plastic Blister Machine" rel="nofollow">Read More <i class="fa fa-angle-right"></i></a>
+                        <span><i class="fa fa-calendar"></i>Jun 18, 2021</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="in_one_card">
+                <a href="/welcome-to-the-production-workshop-of-aluminum-plastic-blister-machine_n54" title="Welcome to the Production Workshop of Aluminum Plastic Blister Machine" class="img"><img src="~/Content/img/news1.jpg" alt="Welcome to the Production Workshop of Aluminum Plastic Blister Machine"></a>
+                <div class="in_wrap">
+                    <a href="/welcome-to-the-production-workshop-of-aluminum-plastic-blister-machine_n54" title="Welcome to the Production Workshop of Aluminum Plastic Blister Machine" class="title">Welcome to the Production Workshop of Aluminum Plastic Blister Machine</a>
+                    <div class="line"></div>
+                    <p>After nearly 30 years of struggle and accumulated experience, our company has established a production base of nearly 10000 square meters in Zhejiang Province, in which the workshop area for manufacturing aluminum-plastic blister machine exceeds 2000 square meters. &nbsp; Let me introduce the high-end aluminum plastic blister packing&nbsp;machine 260r produced by this professional workshop. &nbsp; Blister packing machine is extremely excellent and professional in solid&nbsp;type materials&nbsp;packing and it has been sold to numerous countries and regions and it has successfully obtained numerous praises from customers. &nbsp; The customers at homeland or&nbsp;abroad deeply appreciate it and we have been professional in making pharmaceutical and packing machines for many years thus we are professional. &nbsp; It is extremely excellent in it stop&nbsp;high speed which can successfully and timely meet the urgent orders of clients. &nbsp; DPP 260 R-type Blister packing machine is extremely excellent in its cleaning and maintenance due to its scientific and reasonable design of large platform. &nbsp; It is excellent in its setting of the PVC and PET&nbsp;fragments stop as well as automatic alarm which can efficiently reduce the waste rate of product to ensure the raw material usage. &nbsp; The whole set of mould can be quickly to replace for users&nbsp;and it can be rapidly and convenient installed within an extremely short time of 10 minutes. &nbsp; Blister packer&nbsp;machine has an extremely high degree of safety because all the parts of this equipment are equipped with safety covers to safely protect the people who use it. &nbsp; This equipment completely meets the standard rules of GMP cGMP CE ISO and we have our own professional team in our professional factory. &nbsp; This blister pack machinery&nbsp;is extremely excellent in its noise pollution protection because it is extremely low in noise of less than &lt;75dBA to ensure relatively quiet environment.</p>
+                    <div class="news_other">
+                        <a href="/welcome-to-the-production-workshop-of-aluminum-plastic-blister-machine_n54" title="Welcome to the Production Workshop of Aluminum Plastic Blister Machine" rel="nofollow">Read More <i class="fa fa-angle-right"></i></a>
+                        <span><i class="fa fa-calendar"></i>Jun 18, 2021</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="in_one_card">
+                <a href="/welcome-to-the-production-workshop-of-aluminum-plastic-blister-machine_n54" title="Welcome to the Production Workshop of Aluminum Plastic Blister Machine" class="img"><img src="~/Content/img/news1.jpg" alt="Welcome to the Production Workshop of Aluminum Plastic Blister Machine"></a>
+                <div class="in_wrap">
+                    <a href="/welcome-to-the-production-workshop-of-aluminum-plastic-blister-machine_n54" title="Welcome to the Production Workshop of Aluminum Plastic Blister Machine" class="title">Welcome to the Production Workshop of Aluminum Plastic Blister Machine</a>
+                    <div class="line"></div>
+                    <p>After nearly 30 years of struggle and accumulated experience, our company has established a production base of nearly 10000 square meters in Zhejiang Province, in which the workshop area for manufacturing aluminum-plastic blister machine exceeds 2000 square meters. &nbsp; Let me introduce the high-end aluminum plastic blister packing&nbsp;machine 260r produced by this professional workshop. &nbsp; Blister packing machine is extremely excellent and professional in solid&nbsp;type materials&nbsp;packing and it has been sold to numerous countries and regions and it has successfully obtained numerous praises from customers. &nbsp; The customers at homeland or&nbsp;abroad deeply appreciate it and we have been professional in making pharmaceutical and packing machines for many years thus we are professional. &nbsp; It is extremely excellent in it stop&nbsp;high speed which can successfully and timely meet the urgent orders of clients. &nbsp; DPP 260 R-type Blister packing machine is extremely excellent in its cleaning and maintenance due to its scientific and reasonable design of large platform. &nbsp; It is excellent in its setting of the PVC and PET&nbsp;fragments stop as well as automatic alarm which can efficiently reduce the waste rate of product to ensure the raw material usage. &nbsp; The whole set of mould can be quickly to replace for users&nbsp;and it can be rapidly and convenient installed within an extremely short time of 10 minutes. &nbsp; Blister packer&nbsp;machine has an extremely high degree of safety because all the parts of this equipment are equipped with safety covers to safely protect the people who use it. &nbsp; This equipment completely meets the standard rules of GMP cGMP CE ISO and we have our own professional team in our professional factory. &nbsp; This blister pack machinery&nbsp;is extremely excellent in its noise pollution protection because it is extremely low in noise of less than &lt;75dBA to ensure relatively quiet environment.</p>
+                    <div class="news_other">
+                        <a href="/welcome-to-the-production-workshop-of-aluminum-plastic-blister-machine_n54" title="Welcome to the Production Workshop of Aluminum Plastic Blister Machine" rel="nofollow">Read More <i class="fa fa-angle-right"></i></a>
+                        <span><i class="fa fa-calendar"></i>Jun 18, 2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news_btn_sm">
+            <a href="#"><div class="see_more_btn">See More ...</div></a>
+        </div>
+    </div>
+
+    <!-- ---------------- -->
+    <!--      FOOTER      -->
+    <!-- ---------------- -->
+    <footer class="footer">
+        <div class="footer_tabs">
+            <div class="footer_content">
+                <div class="about__care">
+                    <div class="about_us">
+                        <div class="about_title">
+                            <h4 style="color: white;">ABOUT US</h4>
+                        </div>
+                        <div class="about_content">
+                            <ul>
+                                <li class="about_item"><a href="@Url.Action("About","Home")">About HighWind</a></li>
+                                <li class="about_item"><a href="@Url.Action("Career","Home")">Careers</a></li>
+                                <li class="about_item"><a href="@Url.Action("About","Home")">Private Policy</a></li>
+                                <li class="about_item"><a href="@Url.Action("About","Home")">Terms Of Use</a></li>
+                                <li class="about_item"><a href="@Url.Action("About","Home")">International</a></li>
+                                <li class="about_item"><a href="@Url.Action("About","Home")">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="customer_care">
+                        <div class="about_title">
+                            <h4 style="color: white;">CUSTOMER CARE</h4>
+                        </div>
+                        <div class="about_content">
+                            <ul>
+                                <li class="about_item"><a href="@Url.Action("Contact","Home")">Delivery</a></li>
+                                <li class="about_item"><a href="@Url.Action("Contact","Home")">FAQ</a></li>
+                                <li class="about_item"><a href="@Url.Action("Contact","Home")">Contact US</a></li>
+                                <li class="about_item"><a href="@Url.Action("Contact","Home")">Customer Service</a></li>
+                                <li class="about_item"><a href="@Url.Action("Contact","Home")">Returns</a></li>
+                                <li class="about_item"><a href="@Url.Action("Contact","Home")">Tips and Advice</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="social_about">
+                    <div class="about_title">
+                        <h4 style="color: white;">CONNECT WITH US</h4>
+                    </div>
+                    <div class="social_content">
+                        <div class="social_link">
+                            <div class="social_item"><a href="#"><img src="~/Content/img/fb.png" width="140%" alt=""></a></div>
+                            <div class="social_item"><a href="#"><img src="~/Content/img/twt.png" width="140%" alt=""></a></div>
+                            <div class="social_item"><a href="#"><img src="~/Content/img/lin.png" width="140%" alt=""></a></div>
+                            <div class="social_item"><a href="#"><img src="~/Content/img/ytb.png" width="140%" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <span>Copyright © 2021 HighWind Pharmaceuticals</span> <br>
+                    <span>eProject by Nguyen Nhat Tien & Nguyen Xuan Khoi</span>
+                </div>
+            </div>
+            <div class="footer_contact">
+                <h1 class="logo_text">HIGHWIND</h1>
+                <span>
+                    HighWind Pharmaceutical Door-To-Door Overseas Service, <br /> All Products In Stock, Guaranteed For 3 Years! Free Maintenance For Life time!
+                </span>
+                <div class="foot_cont">
+                    <div class="img_foot">
+                        <img src="~/Content/img/fot_email.png" alt="">
+                    </div>
+                    <div class="text_foot">
+                        <span>Contact & Advisory</span>
+                        <a href="mailto:manager_highwind@email.com" style="color: white;"><h4 style="margin: 10px 0;">manager_highwind@email.com</h4></a>
+                    </div>
+                </div>
+                <div class="foot_cont">
+                    <div class="img_foot">
+                        <img src="~/Content/img/fot_tel.png" alt="">
+                    </div>
+                    <div class="text_foot">
+                        <span>WeChat & Whatsapp & Zalo</span>
+                        <a href="tel:033-516-7610" style="color: white;"><h4 style="margin: 10px 0;">+84 33 516 7610</h4></a>
+                    </div>
+                </div>
+                <div class="foot_cont">
+                    <div class="img_foot">
+                        <img src="~/Content/img/fot_add.png" alt="">
+                    </div>
+                    <div class="text_foot">
+                        <span>Address</span>
+                        <a href="http://maps.google.com/?q=Ha Son Tower, 277A Nguyen Van Dau St. , Ward 11, Binh Thanh District, Ho Chi Minh City" style="color: white;"><h4 style="margin: 10px 0;">Floor 1 - Ha Son Tower, 277A Nguyen Van Dau St. <br /> Ward 11, Binh Thanh District, Ho Chi Minh City</h4></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Owl Carousel JS-->
+    <script src="~/Content/css/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js" type="text/javascript"></script>
+    <script src="~/Content/css/OwlCarousel2-2.3.4/dist/owl.carousel.min.js" type="text/javascript"></script>
+    <!-- Glide JS -->
+    <script src="~/Content/css/glide-master/dist/glide.min.js" type="text/javascript"></script>
+    <script>
+        //Get the button
+        var scrollTop_btn = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                scrollTop_btn.style.display = "block";
+            } else {
+                scrollTop_btn.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        //Sticky header
+        window.onscroll = function () {
+          myFunction();
+        };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+
+        // owl carousel
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 3,
+                },
+                1000: {
+                    items: 5,
+                },
+            },
+        });
+
+        //glide Carousel
+        var glideHero = new Glide('.hero', {
+            type: 'carousel',
+            animationDuration: 2000,
+            autoplay: 4500,
+            focusAt: '1',
+            startAt: 3,
+            perView: 1,
+        });
+        glideHero.mount();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿@model G3Pharmaceuticals.Models.Manufacturer
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Manufacturer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.manufacturerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.manufacturerID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.manufacturerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.manufacturerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nation)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.manufacturerID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

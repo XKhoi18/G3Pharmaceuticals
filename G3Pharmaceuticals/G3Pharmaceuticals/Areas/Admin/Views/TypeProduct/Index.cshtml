@@ -1,0 +1,49 @@
+﻿@model IEnumerable<G3Pharmaceuticals.Models.TypeProduct>
+
+@{
+    ViewBag.Title = "Type Product";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Type Product</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary btn-large" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Type ID
+        </th>
+        <th>
+            Type Name
+        </th>
+        <th>
+            Images
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.typeID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.typeName)
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.images)*@
+                <img src="~/Content/images/typeproduct/@item.images" width="100px" />
+            </td>
+            <td style="font-size:18px;">
+                @Html.ActionLink(" ", "Edit", new { id = item.typeID }, new { @class = "glyphicon glyphicon-edit" }) |
+                @Html.ActionLink(" ", "Details", new { id = item.typeID }, new { @class = "glyphicon glyphicon-folder-open" }) |
+                @Html.ActionLink(" ", "Delete", new { id = item.typeID }, new { @class = "glyphicon glyphicon-trash" })
+            </td>
+        </tr>
+    }
+
+</table>
+

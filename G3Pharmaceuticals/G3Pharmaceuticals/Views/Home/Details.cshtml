@@ -1,0 +1,72 @@
+﻿@model G3Pharmaceuticals.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="~/Content/css/product.css">
+
+<nav class="router_nav">
+    <div class="home_logo">
+        <a href="@Url.Action("Index", "Home")"><i class="fa fa-home"></i> Home</a>
+    </div>
+    <div class="type_display">
+        <a href="@Url.Action("TypePage", "Home", new { typeid = Model.TypeProduct.typeID }, null)">@Html.DisplayFor(model => model.TypeProduct.typeName)</a>
+    </div>
+    <div class="name_display">
+        <span>@Html.DisplayFor(model => model.ProductName)</span>
+    </div>
+</nav>
+
+<div class="product_content">
+    <div class="product_img" style="padding-right: 10px;">
+        <img src="~/Content/images/productS/@Html.DisplayFor(model => model.Images)" width="100%" />
+    </div>
+    <div class="right_content">
+        <div class="product_details">
+            <div class="product_info">
+                <h2><strong>@Html.DisplayFor(model => model.TypeProduct.typeName)</strong></h2>
+                <div class="product_name">
+                    <span>@Html.DisplayFor(model => model.ProductName)</span>
+                </div>
+                <div class="date_manu">
+                    <span>Date: @Html.DisplayFor(model => model.DateOfManufacture) | Product by: <a href="/Home/BrandPage?manuid=@Model.ManufacturerID"><b>@Html.DisplayFor(model => model.Manufacturer.manufacturerName)</b></a></span>
+                    <h4><strong>Availability:</strong> in stock.</h4>
+                </div>
+                <div class="product_price">
+                    <h1>@{var price = String.Format("{0:0,0 USD}", Model.Price * 1.1);} @price</h1>
+                </div>
+            </div>
+            <div class="addtocart">
+                @*<div class="qty_input">
+                    <label for="quantity"><strong>QTY:</strong></label>
+                    <input type="text" name="quantity" style="text-align:center" value="1" maxlength="2" size="2" />
+                </div>*@
+                <a id="cart_href" href="~/Cart/AddItem?id=@Model.ProductID"><div class="cart_btn">ORDER TO BUY</div></a>
+            </div>
+        </div>
+        <div class="product_description" style="clear:both;float:left">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home"><strong>Basic Info</strong></a></li>
+                @*<li><a data-toggle="tab" href="#menu1"><strong>Introduction</strong></a></li>
+                <li><a data-toggle="tab" href="#menu2"><strong>Images</strong></a></li>*@
+            </ul>
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    @Html.Raw(Model.Description)
+                </div>
+                @*<div id="menu1" class="tab-pane fade">
+                    @Html.Raw(Model.Description)
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    @Html.Raw(Model.Description)
+                </div>*@
+            </div>
+        </div>
+    </div>
+</div>

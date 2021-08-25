@@ -1,0 +1,43 @@
+﻿@model IEnumerable<G3Pharmaceuticals.Models.Nation>
+
+@{
+    ViewBag.Title = "Nation";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Nation</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary btn-large" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Nation ID
+        </th>
+        <th>
+            Nation Name
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nationID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nationName)
+            </td>
+            <td style="font-size:18px;">
+                @Html.ActionLink(" ", "Edit", new { id = item.nationID }, new { @class = "glyphicon glyphicon-edit" }) |
+                @Html.ActionLink(" ", "Details", new { id = item.nationID }, new { @class = "glyphicon glyphicon-folder-open" }) |
+                @Html.ActionLink(" ", "Delete", new { id = item.nationID }, new { @class = "glyphicon glyphicon-trash" })
+            </td>
+        </tr>
+    }
+
+</table>
+
+

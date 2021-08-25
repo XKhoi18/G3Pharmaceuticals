@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PharmacyDBModelStoreContainer" CdmEntityContainer="PharmacyDBEntities">
+    <EntitySetMapping Name="Candidates">
+      <EntityTypeMapping TypeName="PharmacyDBModel.Candidate">
+        <MappingFragment StoreEntitySet="Candidate">
+          <ScalarProperty Name="CandidateID" ColumnName="CandidateID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EducationDetails" ColumnName="EducationDetails" />
+          <ScalarProperty Name="CV" ColumnName="CV" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="StaffID" ColumnName="StaffID" />
+          <ScalarProperty Name="InterviewDate" ColumnName="InterviewDate" />
+          <ScalarProperty Name="InterviewNote" ColumnName="InterviewNote" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="PharmacyDBModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Representative" ColumnName="Representative" />
+          <ScalarProperty Name="UserQuote" ColumnName="UserQuote" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Manufacturers">
+      <EntityTypeMapping TypeName="PharmacyDBModel.Manufacturer">
+        <MappingFragment StoreEntitySet="Manufacturer">
+          <ScalarProperty Name="manufacturerID" ColumnName="manufacturerID" />
+          <ScalarProperty Name="manufacturerName" ColumnName="manufacturerName" />
+          <ScalarProperty Name="nation" ColumnName="nation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nations">
+      <EntityTypeMapping TypeName="PharmacyDBModel.Nation">
+        <MappingFragment StoreEntitySet="Nation">
+          <ScalarProperty Name="nationID" ColumnName="nationID" />
+          <ScalarProperty Name="nationName" ColumnName="nationName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDetails">
+      <EntityTypeMapping TypeName="PharmacyDBModel.OrderDetail">
+        <MappingFragment StoreEntitySet="OrderDetail">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orderproes">
+      <EntityTypeMapping TypeName="PharmacyDBModel.Orderpro">
+        <MappingFragment StoreEntitySet="Orderpro">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="StaffID" ColumnName="StaffID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="PharmacyDBModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DateOfManufacture" ColumnName="DateOfManufacture" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="ManufacturerID" ColumnName="ManufacturerID" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Staffs">
+      <EntityTypeMapping TypeName="PharmacyDBModel.Staff">
+        <MappingFragment StoreEntitySet="Staff">
+          <ScalarProperty Name="StaffID" ColumnName="StaffID" />
+          <ScalarProperty Name="StaffName" ColumnName="StaffName" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeProducts">
+      <EntityTypeMapping TypeName="PharmacyDBModel.TypeProduct">
+        <MappingFragment StoreEntitySet="TypeProduct">
+          <ScalarProperty Name="typeID" ColumnName="typeID" />
+          <ScalarProperty Name="typeName" ColumnName="typeName" />
+          <ScalarProperty Name="images" ColumnName="images" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

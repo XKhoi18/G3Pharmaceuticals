@@ -1,0 +1,85 @@
+﻿@model IEnumerable<G3Pharmaceuticals.Models.Staff>
+
+@{
+    ViewBag.Title = "Staff";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Staff</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary btn-large" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StaffID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StaffName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaxCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Username)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Images)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StaffID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StaffName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaxCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.Password)*@
+                *******************
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.Image)*@
+                <img src="~/Content/images/id photo/@item.Images" width="100px" />
+            </td>
+            <td style="font-size:18px;">
+                @Html.ActionLink(" ", "Edit", new { id = item.StaffID }, new { @class = "glyphicon glyphicon-edit" }) |
+                @Html.ActionLink(" ", "Details", new { id = item.StaffID }, new { @class = "glyphicon glyphicon-folder-open" }) |
+                @Html.ActionLink(" ", "Delete", new { id = item.StaffID }, new { @class = "glyphicon glyphicon-trash" })
+            </td>
+        </tr>
+    }
+
+</table>

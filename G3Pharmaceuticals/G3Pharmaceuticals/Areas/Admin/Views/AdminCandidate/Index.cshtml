@@ -1,0 +1,147 @@
+﻿@model IEnumerable<G3Pharmaceuticals.Models.Candidate>
+
+@{
+    ViewBag.Title = "Candidates";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>List of Candidates</h2>
+
+<table class="table">
+    <tr>
+        <th>
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.CandidateID)*@
+            ID
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.FullName)*@
+            Name
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Staff.StaffName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EducationDetails)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Username)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.InterviewDate)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.InterviewNote)
+        </th>*@
+        <th></th>
+    </tr>
+@{int count = 1;}
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @count @{count = count + 1;}
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CandidateID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @(item.DateOfBirth.HasValue ? @item.DateOfBirth.Value.ToString("dd-MM-yyyy") : null)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Staff.StaffName)
+        </td>
+        <td>            
+            @{
+                if (item.Status == 4)
+                {
+                    <div>InterView Failed</div>
+                }
+                else if (item.Status == 1)
+                {
+                    <div>CV Evaluating</div>
+                }
+                else if (item.Status == 2)
+                {
+                    <div>CV Evaluate Failed</div>
+                }
+                else if (item.Status == 3)
+                {
+                    <div>InterView Evaluating</div>
+                }
+                else
+                {
+                    <div>Processing</div>
+                }
+            }
+        </td>
+
+        <td>
+            @if (@item.CV != null)
+            {
+                <a href="@Url.Content("~/Content/CV Files/" + @item.CV)">CV File</a>
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EducationDetails)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Username)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Password)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.InterviewDate)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.InterviewNote)
+        </td>*@
+        <td style="font-size:18px;">
+            @Html.ActionLink(" ", "Edit", new { id = item.CandidateID }, new { @class = "glyphicon glyphicon-edit" }) 
+            @Html.ActionLink(" ", "Details", new { id = item.CandidateID }, new { @class = "glyphicon glyphicon-folder-open" }) 
+            @Html.ActionLink(" ", "SendMail", new { id = item.CandidateID }, new { @class = "glyphicon glyphicon-envelope" })
+        </td>
+    </tr>
+}
+
+</table>

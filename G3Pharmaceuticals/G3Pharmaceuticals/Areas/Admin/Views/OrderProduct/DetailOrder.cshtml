@@ -1,0 +1,82 @@
+﻿@model IEnumerable<G3Pharmaceuticals.Models.OrderDetail>
+
+@{
+    ViewBag.Title = "DetailOrder";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DetailOrder</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductID)
+        </th>
+        <th width="500px">
+            @Html.DisplayNameFor(model => model.Product.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Product.Images)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Product.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th></th>
+        <th></th>
+    </tr>
+    @{ double sum = 0;}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Product.ProductName)
+            </td>
+            <td>
+                <img src="~/Content/images/products/@item.Product.Images" width="80px" />
+            </td>
+            <td>
+                <div style="color:red">
+                    @{var price = String.Format("{0:0,0 USD}", @item.Product.Price*1.1);}
+                    @price
+                </div>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                <div style="color:red">
+                    @{ sum = sum + (double)(item.Quantity * item.Product.Price * 1.1);}
+                    @{ var total = String.Format("{0:0,0 USD}", item.Quantity * item.Product.Price * 1.1);}
+                    @total
+                </div>
+                @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+            </td>
+        </tr>
+                        }
+    <tr class="text-right">
+        <td colspan="7">
+            <div style="color:red">
+                Total @{ var sumprice = String.Format("{0:0,0 USD}", sum);}
+                @sumprice
+            </div>
+        </td>
+    </tr>
+</table>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
+

@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="glide hero">
+    <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+            <li class="glide__slide"><img src="~/Content/img/slideimg1.png" width="100%" alt=""></li>
+            <li class="glide__slide"><img src="~/Content/img/slideimg2.png" width="100%" alt=""></li>
+            <li class="glide__slide"><img src="~/Content/img/slideimg3.png" width="100%" alt=""></li>
+        </ul>
+    </div>
+</div>
+<!-- Recommend Products-->
+<div class="recommend_for_you">
+    <div class="rec_title">
+        <h1>Recommended for You</h1>
+    </div>
+    <div class="owl-carousel owl-theme">
+    @{  string typeid = "";}
+    @foreach (var item in Model)
+    {
+    typeid = ViewBag.typeid;
+        <div class="item">
+            <div class="rec_card">
+                <a class="card_content" href="~/Home/Details?id=@item.ProductID">
+                    <div class="rec_card_img">
+                        <img src="~/Content/images/products/@item.Images"  alt="@item.Images">
+                    </div>
+                </a>
+                <div class="rec_product">
+                    <div class="rec_name">
+                        <span>@item.ProductName</span>
+                    </div>
+                </div>
+                <div class="price_cart">
+                    <span>@{var price = String.Format("{0:0,0}", @item.Price * 1.1);} $@price | <a class="cart" href="~/Cart/AddItem?id=@item.ProductID"><i class="fa fa-cart-plus" style="padding-right: 5px;"></i>Order Now</a></span>
+                </div>
+            </div>
+        </div>
+    }
+    </div>
+</div>
+<!-- All Products-->
+<div class="recommend_for_you">
+    <div class="rec_title">
+        <h1>All Products</h1>
+    </div>
+    <div class="owl-carousel owl-theme">
+        @foreach (var item in Model)
+        {
+            typeid = ViewBag.typeid;
+            <div class="item">
+                <div class="rec_card">
+                    <a class="card_content" href="~/Home/Details?id=@item.ProductID">
+                        <div class="rec_card_img">
+                            <img src="~/Content/images/products/@item.Images" alt="@item.Images">
+                        </div>
+                    </a>
+                    <div class="rec_product">
+                        <div class="rec_name">
+                            <span>@item.ProductName</span>
+                        </div>
+                    </div>
+                    <div class="price_cart">
+                        <span>@{var price = String.Format("{0:0,0}", @item.Price*1.1);} $@price | <a class="cart" href="~/Cart/AddItem?id=@item.ProductID"><i class="fa fa-cart-plus" style="padding-right: 5px;"></i>Order Now</a></span>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,81 @@
+﻿@model G3Pharmaceuticals.Models.Candidate
+
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/_LayoutCandidate.cshtml";
+}
+<div class="container-profile">
+    <a href="@Url.Action("Index", "Candidate")" style="color:#00b9f2;"><i class="fa fa-arrow-left"></i> Back to Home</a>
+
+    <div class="edit-profile">
+        <div class="form-title">
+            <h1>Edit your profile</h1>
+            <a class="edit-btn" href="~/Candidate/Update?id=@Session["candidate"]">
+                <svg class="ContactInformation_editIcon__6EtK6 ContactInformation_showEditIcon__3b1LR" width="25" height="25" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter id="filter-edit"><feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.466667 0 0 0 0 0.466667 0 0 0 0 0.466667 0 0 0 1.000000 0"></feColorMatrix></filter></defs><g id="icons/action/icon-edit/size-m" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g filter="url(#filter-edit)" id="icons8-edit-(7)"><g transform="translate(6.000000, 6.000000)"><polyline id="Path" stroke="#000000" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round" points="17.6322207 4.6486069 3.30548966 18.9748966 8.73477536e-13 19.862069 0.886731034 16.5565793 15.2134621 2.22984828"></polyline><path d="M18.8685241,4.03156499 C18.8663172,4.03332414 19.2322207,3.66742069 19.2322207,3.66742069 C20.0712828,2.82835862 20.0712828,1.46802759 19.2331034,0.629406897 C18.3931586,-0.210096552 17.033269,-0.209213793 16.1942069,0.629406897 C16.1942069,0.629406897 15.8278621,0.995751724 15.830059,0.993544828 L18.8685241,4.03156499 Z M0.967062069,16.4758069 L3.38626207,18.8950069 L0.209213793,19.6528552 L0.967062069,16.4758069 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path></g></g></g></svg>
+            </a>
+        </div>
+        @using (Html.BeginForm("", "Candidate", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            try
+            {
+                <table class="table-profile">
+                    <tr class="border-profile">
+                        <td>Candidate ID</td>
+                        <td><input type="text" id="CandidateID" name="CandidateID" value="@Model.CandidateID" readonly /></td>
+                        <td>Full Name</td>
+                        <td><input type="text" id="FullName" name="FullName" value="@Model.FullName" /></td>
+                    </tr>
+                    <tr class="border-profile">
+                        <td>Gender</td>
+                        <td>
+                            <select id="Gender" name="Gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </td>
+                        <td>Date Of Birth</td>
+                        <td><input type="text" id="DateOfBirth" name="DateOfBirth" value="@(Model.DateOfBirth.HasValue ? @Model.DateOfBirth.Value.ToString("dd-MM-yyyy") : null)" /></td>
+                    </tr>
+                    <tr class="border-profile">
+                        <td>Email</td>
+                        <td><input type="text" id="Email" name="Email" value="@Model.Email" /></td>
+                        <td>Phone</td>
+                        <td><input type="text" id="Phone" name="Phone" value="@Model.Phone" /></td>
+                    </tr>
+                    <tr class="border-profile">
+                        <td>Address</td>
+                        <td><input type="text" id="Address" name="Address" value="@Model.Address" /></td>
+                        <td>Status</td>
+                        <td><input type="text" id="Status" name="Status" value="@Model.Status" readonly /></td>
+                    </tr>
+                    <tr class="border-profile">
+                        <td>Education Details</td>
+                        <td>@*<input type="text" id="EducationDetails" name="EducationDetails" value="@Model.EducationDetails" />*@
+                            <select id="EducationDetails" name="EducationDetails">
+                                <option value="University Graduated">University Graduated</option>
+                                <option value="College Graduated">College Graduated</option>
+                            </select>
+                        </td>
+                        <td>Your CV</td>
+                        <td>@Session["cv"] <input type="file" name="cvUpload" id="cvUpload" /> @TempData["notice"]</td>
+                    </tr>
+                    <tr class="border-profile">
+                        <td>Username</td>
+                        <td><input type="text" id="Username" name="Username" value="@Model.Username" /></td>
+                        <td>Password</td>
+                        <td>@Html.EditorFor(model => model.Password, new { htmlAttributes = new { @type = "password" } })</td>
+                    </tr>
+                    <tr class="border-profile">
+                        <td>Interview Date</td>
+                        <td><input type="text" id="InterviewDate" name="InterviewDate" value="@Model.InterviewDate" /></td>
+                        <td>@*Interview Note*@</td>
+                        <td>@*<input type="text" id="InterviewNote" name="InterviewNote" value="@Model.InterviewNote" />*@</td>
+                    </tr>
+                </table>
+            }
+            catch (Exception ex) { }
+            <input type="submit" value="Save your change">  
+        }     
+    </div>
+</div>   

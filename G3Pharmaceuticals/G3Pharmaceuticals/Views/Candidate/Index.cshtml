@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Candidates";
+    Layout = "~/Views/Shared/_LayoutCandidate.cshtml";
+}
+
+<div class="description-text">
+    <p>HighWind Pharmaceutical seeks to identify what motivates our candidates, whether they are looking for the excitement and agility of a biotech or a smaller pharmaceutical company, or instead are looking to join an established global player. We ensure the identification, attraction and presentation of the right talent who will add value to the industry.</p> <br />
+    <img src="~/Content/img/shutterstock_758040853.jpg" width="100%" alt="">
+</div>
+<div class="regis-upload">
+    <div class="regis-container">
+        <div class="register-fluid">
+            <div class="register-content">
+                <span class="reg-title">REGISTER WITH US</span>
+                <p class="reg-text">
+
+                    We’d like to get to know you. <br /><br />
+
+                    Click the link below to register with us. <br /><br />
+
+                    Your journey starts here.<br /><br />
+                </p>
+                <a href="@Url.Action("Register", "Candidate")">
+                    <div class="register-btn">register now <i class="fa fa-arrow-right"></i></div>
+                </a>
+            </div>
+        </div>
+        <div class="uploadcv-fluid">
+            <div class="upload-content">
+                <span class="up-title">UPLOAD YOUR CV​</span>
+                <p class="up-text">
+
+                    Already registered?<br /><br />
+
+                    Complete your profile and upload your CV today. ​<br /><br />
+
+                    <br /><br />
+                </p>
+                <a href="~/Candidate/Profile?id=@Session["candidate"]">
+                    <div class="upload-btn">upload CV now <i class="fa fa-arrow-right"></i></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

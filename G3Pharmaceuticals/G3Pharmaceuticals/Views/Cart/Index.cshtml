@@ -1,0 +1,95 @@
+﻿@model IEnumerable<G3Pharmaceuticals.Models.CartItem>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>List items in your Cart</h2>
+
+@if (Model == null || Model.Count() <= 0)
+{
+    <div><h3>Your Orders-List is Empty</h3></div>
+}
+else
+{
+<table class="table" style="width: 100%;">
+    <tr>
+        <th style="text-align:center">
+        STT
+        </th>
+        <th style="text-align:center">
+        Product Name
+        </th>
+        <th style="text-align:center">
+        Product Image
+        </th>
+        <th style="text-align:center">
+        Price
+        </th>
+        <th style="text-align:center">
+        Quantity
+        </th>
+        <th style="text-align:center">
+        Money
+        </th>
+        <th></th>
+    </tr>
+    @{ double total = 0;
+    int stt = 0; }
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td style="text-align:center">
+        @{ stt += 1;} @stt
+        </td>
+
+        <td width="300px" style="text-align:center">
+        @Html.DisplayFor(modelItem => item.product.ProductName)
+        </td>
+
+        <td style="text-align:center">
+        <img src="~/Content/images/products/@item.product.Images" width="150px" />
+        </td>
+
+        <td style="text-align:center">
+        <p style="color: red;">@{var price = String.Format("{0:0,0}", @item.product.Price*1.1);} $@price</p>
+        </td>
+
+        <td style="text-align:center">
+        <b style="font-size:24px;">
+        @Html.ActionLink("-", "UpdateItem", "Cart", new { id = item.product.ProductID, quantity = item.quantity - 1 }, null)
+        </b>
+        <input type="text" name="quantity" style="text-align:center; width: 10%; height: 30px;" value="@item.quantity" maxlength="2" size="2" readonly />
+        <b style="font-size:24px;">
+        @Html.ActionLink("+", "UpdateItem", "Cart", new { id = item.product.ProductID, quantity = item.quantity + 1 }, null)
+        </b>
+        </td>
+
+        <td style="text-align:center">
+        @{ var money = String.Format("{0:0,0}",@item.product.Price * 1.1 * item.quantity);}
+        <p style="color: red;">$@money</p>
+        @{total = total + (double)(@item.product.Price * 1.1 * item.quantity);}
+        </td>
+
+        <td style="text-align:center">
+        @Html.ActionLink("Delete", "DeleteItem", new { id = item.product.ProductID })
+        </td>
+    </tr>
+        }
+    <tr>
+        <td colspan="4"></td>
+        <td style="text-align:right"><strong>Total Money: </strong></td>
+        <td style="text-align:center">
+            @{ var totalmoney = String.Format("{0:0,0}", @total);}
+        <span style="color: red;"><strong>$@totalmoney</strong></span>
+        </td>
+        <td></td>
+        </tr>
+        <tr>
+        <td colspan="5"><strong>@Html.ActionLink("Back to Home", "Index", "Home")</strong></td>
+        <td style="text-align: center;font-size:20px;"><br /><img src="~/Content/images/Shopping_cart_icon.png" width="20px" /><strong>@Html.ActionLink("Order", "Order")</strong></td>
+        <td></td>
+    </tr>    
+</table>
+}

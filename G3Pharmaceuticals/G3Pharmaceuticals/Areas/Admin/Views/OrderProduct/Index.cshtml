@@ -1,0 +1,72 @@
+﻿@model IEnumerable<G3Pharmaceuticals.Models.Orderpro>
+
+@{
+    ViewBag.Title = "Orders";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Orders</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Customer.CustomerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Staff.StaffName)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Customer.CustomerName)
+            </td>
+            <td>
+                @{
+                    if (item.Status == 0)
+                    {
+                        <div>Processing</div>
+                    }
+                    else if (item.Status == 1)
+                    {
+                        <div>Delivery in Progress</div>
+                    }
+                    else
+                    {
+                        <div>Paid</div>
+                    }
+                }
+                @*@Html.DisplayFor(modelItem => item.Status)*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Staff.StaffName)
+            </td>
+            <td style="font-size:18px;">
+                @Html.ActionLink(" ", "Edit", new { id = item.OrderID }, new { @class = "glyphicon glyphicon-edit" }) |
+                @Html.ActionLink(" ", "Details", new { id = item.OrderID }, new { @class = "glyphicon glyphicon-folder-open" }) |
+                @Html.ActionLink(" ", "Delete", new { id = item.OrderID }, new { @class = "glyphicon glyphicon-trash" })
+            </td>
+        </tr>
+                    }
+
+</table>
+
+
